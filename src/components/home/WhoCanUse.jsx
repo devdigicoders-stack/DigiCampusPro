@@ -49,12 +49,12 @@ export default function WhoCanUse() {
     <section className="relative bg-gradient-to-b from-[#F3F6FA] via-white to-[#F0F4F8] py-16 sm:py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
       <div className="max-w-7xl mx-auto text-center">
         {/* Top Pill Badge */}
-        <div className="inline-flex items-center gap-1.5 px-4 py-1 rounded-full text-xs font-black uppercase tracking-wider text-slate-950 bg-gradient-to-r from-amber-400 via-amber-500 to-amber-400 shadow-sm mb-3">
+        <div className="inline-flex items-center gap-1.5 px-4 py-1 rounded-full text-xs font-semibold tracking-wider text-slate-950 bg-gradient-to-r from-amber-400 via-amber-500 to-amber-400 shadow-sm mb-3">
           WHO CAN USE
         </div>
 
         {/* Section Heading */}
-        <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-black text-[#0B132B] tracking-tight mb-12 font-['Outfit',sans-serif]">
+        <h2 className="text-3xl sm:text-4xl lg:text-[40px] font-bold text-[#0B132B] tracking-tight mb-12 font-['Outfit',sans-serif]">
           Designed for Everyone in the Education Ecosystem
         </h2>
 
@@ -88,7 +88,7 @@ export default function WhoCanUse() {
                 {/* Title, Subtitle and Arrow Button */}
                 <div className="flex items-end justify-between gap-2 mt-auto">
                   <div>
-                    <h3 className="text-white font-bold text-base sm:text-[15px] font-['Outfit',sans-serif] tracking-tight group-hover:text-amber-400 transition-colors">
+                    <h3 className="text-white font-semibold text-base sm:text-[15px] font-['Outfit',sans-serif] tracking-tight group-hover:text-amber-400 transition-colors">
                       {role.title}
                     </h3>
                     <p className="text-slate-300/85 text-[11px] sm:text-xs mt-0.5 leading-snug">

@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { scrollToSection } from '../../utils/smoothScroll'
 import {
   ArrowRight,
   Play,
@@ -45,7 +46,7 @@ export default function HeroSection() {
             </div>
 
             {/* Main Headline */}
-            <h1 className="text-3xl sm:text-4xl lg:text-[46px] xl:text-[52px] font-black text-white tracking-tight leading-[1.12] font-['Outfit',sans-serif]">
+            <h1 className="text-3xl sm:text-4xl lg:text-[44px] xl:text-[50px] font-bold text-white tracking-tight leading-[1.16] font-['Outfit',sans-serif]">
               Digitize Today <br />
               Build a <span className="text-[#F59E0B]">Better</span> <br />
               <span className="text-[#F59E0B]">Tomorrow</span>
@@ -62,9 +63,9 @@ export default function HeroSection() {
                 href="#contact"
                 onClick={(e) => {
                   e.preventDefault()
-                  document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })
+                  scrollToSection('contact')
                 }}
-                className="inline-flex items-center justify-center gap-2 px-6 py-2.5 sm:px-7 sm:py-3 rounded-full text-xs sm:text-sm font-bold text-[#08132B] bg-gradient-to-r from-[#FDE047] via-[#FBBF24] to-[#F59E0B] shadow-[0_0_18px_rgba(245,158,11,0.35)] hover:shadow-[0_0_24px_rgba(245,158,11,0.55)] transition-all transform hover:scale-105 active:scale-95 cursor-pointer"
+                className="inline-flex items-center justify-center gap-2 px-6 py-2.5 sm:px-7 sm:py-3 rounded-full text-xs sm:text-sm font-semibold text-[#08132B] bg-gradient-to-r from-[#FDE047] via-[#FBBF24] to-[#F59E0B] shadow-[0_0_18px_rgba(245,158,11,0.35)] hover:shadow-[0_0_24px_rgba(245,158,11,0.55)] transition-all transform hover:scale-105 active:scale-95 cursor-pointer"
               >
                 <span>Request a Demo</span>
                 <ArrowRight className="w-3.5 h-3.5" />
@@ -85,26 +86,26 @@ export default function HeroSection() {
             {/* Stats Row */}
             <div className="grid grid-cols-3 gap-4 sm:gap-6 pt-4 sm:pt-5 border-t border-blue-900/40 max-w-md">
               <div>
-                <p className="text-xl sm:text-2xl font-black text-[#F59E0B] font-['Outfit',sans-serif]">
+                <p className="text-xl sm:text-2xl font-bold text-[#F59E0B] font-['Outfit',sans-serif]">
                   500+
                 </p>
-                <p className="text-[11px] sm:text-xs text-slate-300 mt-0.5 font-medium">
+                <p className="text-[11px] sm:text-xs text-slate-300 mt-0.5 font-normal">
                   Institutes Trust Us
                 </p>
               </div>
               <div>
-                <p className="text-xl sm:text-2xl font-black text-[#F59E0B] font-['Outfit',sans-serif]">
+                <p className="text-xl sm:text-2xl font-bold text-[#F59E0B] font-['Outfit',sans-serif]">
                   50K+
                 </p>
-                <p className="text-[11px] sm:text-xs text-slate-300 mt-0.5 font-medium">
+                <p className="text-[11px] sm:text-xs text-slate-300 mt-0.5 font-normal">
                   Students Managed
                 </p>
               </div>
               <div>
-                <p className="text-xl sm:text-2xl font-black text-[#F59E0B] font-['Outfit',sans-serif]">
+                <p className="text-xl sm:text-2xl font-bold text-[#F59E0B] font-['Outfit',sans-serif]">
                   99.9%
                 </p>
-                <p className="text-[11px] sm:text-xs text-slate-300 mt-0.5 font-medium">
+                <p className="text-[11px] sm:text-xs text-slate-300 mt-0.5 font-normal">
                   Uptime & Support
                 </p>
               </div>
@@ -237,7 +238,7 @@ export default function HeroSection() {
                           <div className="w-3.5 h-3.5 rounded bg-sky-100 text-sky-600 flex items-center justify-center mb-0.5">
                             <Users className="w-2 h-2" />
                           </div>
-                          <p className="text-[10px] font-black text-slate-800 leading-none">2,548</p>
+                          <p className="text-[10px] font-semibold text-slate-800 leading-none">2,548</p>
                           <p className="text-[6.5px] text-slate-500 font-medium truncate">Total Students</p>
                         </div>
 
@@ -246,7 +247,7 @@ export default function HeroSection() {
                           <div className="w-3.5 h-3.5 rounded bg-rose-100 text-rose-600 flex items-center justify-center mb-0.5">
                             <GraduationCap className="w-2.5 h-2.5" />
                           </div>
-                          <p className="text-[10px] font-black text-slate-800 leading-none">125</p>
+                          <p className="text-[10px] font-semibold text-slate-800 leading-none">125</p>
                           <p className="text-[6.5px] text-slate-500 font-medium truncate">Faculty Members</p>
                         </div>
 
@@ -255,7 +256,7 @@ export default function HeroSection() {
                           <div className="w-3.5 h-3.5 rounded bg-emerald-100 text-emerald-600 flex items-center justify-center mb-0.5">
                             <Building2 className="w-2 h-2" />
                           </div>
-                          <p className="text-[10px] font-black text-slate-800 leading-none">12</p>
+                          <p className="text-[10px] font-semibold text-slate-800 leading-none">12</p>
                           <p className="text-[6.5px] text-slate-500 font-medium truncate">Departments</p>
                         </div>
 
@@ -264,7 +265,7 @@ export default function HeroSection() {
                           <div className="w-3.5 h-3.5 rounded bg-amber-100 text-amber-600 flex items-center justify-center mb-0.5">
                             <Activity className="w-2 h-2" />
                           </div>
-                          <p className="text-[10px] font-black text-slate-800 leading-none">98%</p>
+                          <p className="text-[10px] font-semibold text-slate-800 leading-none">98%</p>
                           <p className="text-[6.5px] text-slate-500 font-medium truncate">Attendance Rate</p>
                         </div>
                       </div>
@@ -403,7 +404,7 @@ export default function HeroSection() {
                   onClick={(e) => {
                     e.preventDefault()
                     setShowVideoModal(false)
-                    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })
+                    scrollToSection('contact')
                   }}
                   className="px-5 py-2 rounded-xl text-xs font-bold text-slate-950 bg-amber-400 hover:bg-amber-500 cursor-pointer"
                 >

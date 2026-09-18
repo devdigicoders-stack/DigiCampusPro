@@ -106,7 +106,7 @@ export default function TrustBanner() {
 
               {/* Text content */}
               <div className="text-left">
-                <p className="text-sm sm:text-base font-bold text-white tracking-tight leading-snug font-['Outfit',sans-serif]">
+                <p className="text-sm sm:text-base font-semibold text-white tracking-tight leading-snug font-['Outfit',sans-serif]">
                   {item.title}
                 </p>
                 <p className="text-xs sm:text-[13px] font-medium text-slate-300 tracking-normal leading-snug mt-0.5">

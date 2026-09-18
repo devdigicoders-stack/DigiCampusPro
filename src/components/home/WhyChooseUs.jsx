@@ -149,12 +149,12 @@ export default function WhyChooseUs() {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-14">
           {/* Top Pill Badge */}
-          <div className="inline-flex items-center gap-1.5 px-5 py-1.5 rounded-full text-xs font-black uppercase tracking-wider text-slate-950 bg-gradient-to-r from-amber-400 via-amber-500 to-amber-400 shadow-sm mb-4">
+          <div className="inline-flex items-center gap-1.5 px-5 py-1.5 rounded-full text-xs font-semibold tracking-wider text-slate-950 bg-gradient-to-r from-amber-400 via-amber-500 to-amber-400 shadow-sm mb-4">
             WHY CHOOSE DIGYCAMPUSPRO
           </div>
 
           {/* Main Heading */}
-          <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-black text-white tracking-tight leading-tight mb-3 font-['Outfit',sans-serif]">
+          <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-bold text-white tracking-tight leading-tight mb-3 font-['Outfit',sans-serif]">
             More Than Just an ERP
           </h2>
 
@@ -178,7 +178,7 @@ export default function WhyChooseUs() {
 
               {/* Text Info */}
               <div>
-                <h3 className="text-xs sm:text-sm lg:text-[14px] font-bold text-white tracking-tight leading-snug font-['Outfit',sans-serif] group-hover:text-amber-300 transition-colors">
+                <h3 className="text-xs sm:text-sm lg:text-[14px] font-semibold text-white tracking-tight leading-snug font-['Outfit',sans-serif] group-hover:text-amber-300 transition-colors">
                   {card.title}
                 </h3>
                 <p className="text-[10px] sm:text-[11px] text-slate-300/80 mt-0.5 leading-snug">

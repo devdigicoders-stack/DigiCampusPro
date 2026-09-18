@@ -55,12 +55,12 @@ export default function HowItWorks() {
         {/* Section Header */}
         <div className="text-center mb-10 sm:mb-12">
           {/* Top Pill Badge */}
-          <div className="inline-flex items-center gap-1.5 px-5 py-1.5 rounded-full text-xs font-black uppercase tracking-wider text-slate-950 bg-gradient-to-r from-amber-400 via-amber-500 to-amber-400 shadow-sm mb-3">
+          <div className="inline-flex items-center gap-1.5 px-5 py-1.5 rounded-full text-xs font-semibold tracking-wider text-slate-950 bg-gradient-to-r from-amber-400 via-amber-500 to-amber-400 shadow-sm mb-3">
             HOW IT WORKS
           </div>
 
           {/* Main Heading */}
-          <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-black text-[#0B132B] tracking-tight font-['Outfit',sans-serif]">
+          <h2 className="text-3xl sm:text-4xl lg:text-[40px] font-bold text-[#0B132B] tracking-tight font-['Outfit',sans-serif]">
             Get Started in 3 Simple Steps
           </h2>
         </div>
@@ -80,10 +80,10 @@ export default function HowItWorks() {
 
                   {/* Text Content */}
                   <div className="text-left">
-                    <span className="text-blue-600 font-black text-lg sm:text-xl font-['Outfit',sans-serif] block leading-none mb-1">
+                    <span className="text-blue-600 font-bold text-lg sm:text-xl font-['Outfit',sans-serif] block leading-none mb-1">
                       {step.number}
                     </span>
-                    <h3 className="text-slate-900 font-bold text-base sm:text-[17px] font-['Outfit',sans-serif] tracking-tight leading-snug">
+                    <h3 className="text-slate-900 font-semibold text-base sm:text-[17px] font-['Outfit',sans-serif] tracking-tight leading-snug">
                       {step.title}
                     </h3>
                     <p className="text-slate-500 text-xs sm:text-[13px] mt-1 leading-relaxed">

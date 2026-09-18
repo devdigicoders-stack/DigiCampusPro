@@ -89,16 +89,16 @@ export default function ContactSection() {
       <div className="max-w-7xl mx-auto relative">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest text-amber-300 bg-amber-400/10 border border-amber-400/30 backdrop-blur-md shadow-sm mb-4">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider text-amber-300 bg-amber-400/10 border border-amber-400/30 backdrop-blur-md shadow-sm mb-4">
             <Sparkles className="w-3.5 h-3.5 text-amber-400" />
             <span>GET IN TOUCH</span>
           </div>
 
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight font-['Outfit',sans-serif] mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white tracking-tight font-['Outfit',sans-serif] mb-4">
             Connect With Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-amber-300 to-yellow-500">Campus Solutions Team</span>
           </h2>
 
-          <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
+          <p className="text-slate-300 text-sm sm:text-base leading-relaxed font-normal">
             Ready to streamline admissions, fee collection, and academic governance? Reach out to schedule a live customized walkthrough or talk directly to our institutional architects.
           </p>
         </div>
@@ -113,12 +113,12 @@ export default function ContactSection() {
 
               <div className="flex items-center justify-between pb-6 mb-6 border-b border-blue-900/40">
                 <div>
-                  <h3 className="text-xl font-bold text-white font-['Outfit',sans-serif]">
+                  <h3 className="text-lg sm:text-xl font-semibold text-white font-['Outfit',sans-serif]">
                     Institutional Helplines
                   </h3>
                   <p className="text-xs text-blue-200/70 mt-1">Direct reach to our Lucknow tech center</p>
                 </div>
-                <div className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-semibold">
+                <div className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-medium">
                   <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping inline-block" />
                   <span>Available Now</span>
                 </div>
@@ -135,11 +135,11 @@ export default function ContactSection() {
                     <Phone className="w-5 h-5" />
                   </div>
                   <div>
-                    <div className="text-xs text-slate-400 font-medium">Direct Call / Helpline</div>
-                    <div className="text-sm sm:text-base font-bold text-white group-hover:text-amber-400 transition-colors">
+                    <div className="text-xs text-slate-400 font-normal">Direct Call / Helpline</div>
+                    <div className="text-sm sm:text-base font-semibold text-white group-hover:text-amber-400 transition-colors">
                       +91 9140967607
                     </div>
-                    <div className="text-[11px] text-blue-300/80">Mon – Sat, 9:00 AM – 7:00 PM IST</div>
+                    <div className="text-[11px] text-blue-300/80 font-normal">Mon – Sat, 9:00 AM – 7:00 PM IST</div>
                   </div>
                 </a>
 
@@ -152,11 +152,11 @@ export default function ContactSection() {
                     <Mail className="w-5 h-5" />
                   </div>
                   <div>
-                    <div className="text-xs text-slate-400 font-medium">Official Mail & RFPs</div>
-                    <div className="text-sm sm:text-base font-bold text-white group-hover:text-amber-400 transition-colors">
+                    <div className="text-xs text-slate-400 font-normal">Official Mail & RFPs</div>
+                    <div className="text-sm sm:text-base font-semibold text-white group-hover:text-amber-400 transition-colors">
                       info@digicampuspro.com
                     </div>
-                    <div className="text-[11px] text-emerald-400 font-medium">Guaranteed response within 2 hours</div>
+                    <div className="text-[11px] text-emerald-400 font-normal">Guaranteed response within 2 hours</div>
                   </div>
                 </a>
 
@@ -166,11 +166,11 @@ export default function ContactSection() {
                     <MapPin className="w-5 h-5" />
                   </div>
                   <div>
-                    <div className="text-xs text-slate-400 font-medium">Corporate Headquarters</div>
+                    <div className="text-xs text-slate-400 font-normal">Corporate Headquarters</div>
                     <div className="text-sm font-semibold text-white">
                       Digicoders Technologies
                     </div>
-                    <div className="text-xs text-slate-300/80 leading-relaxed mt-0.5">
+                    <div className="text-xs text-slate-300/80 leading-relaxed mt-0.5 font-normal">
                      2nd Floor, B-36, Sector O, Near Ram Ram Bank Chauraha, Aliganj, Lucknow, Uttar Pradesh, 226021
                     </div>
                   </div>
@@ -183,7 +183,7 @@ export default function ContactSection() {
                   href="https://wa.me/919140967607?text=Hello%20DigiCampusPro%20Team,%20I%20would%20like%20to%20schedule%20a%20demo%20for%20our%20college."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full flex items-center justify-center gap-2.5 py-3 px-4 rounded-xl text-xs sm:text-sm font-bold text-slate-950 bg-gradient-to-r from-emerald-400 via-emerald-300 to-emerald-400 hover:from-emerald-300 hover:to-emerald-400 shadow-lg shadow-emerald-500/20 transition-all transform hover:scale-[1.02] active:scale-95 cursor-pointer"
+                  className="w-full flex items-center justify-center gap-2.5 py-3 px-4 rounded-xl text-xs sm:text-sm font-semibold text-slate-950 bg-gradient-to-r from-emerald-400 via-emerald-300 to-emerald-400 hover:from-emerald-300 hover:to-emerald-400 shadow-lg shadow-emerald-500/20 transition-all transform hover:scale-[1.02] active:scale-95 cursor-pointer"
                 >
                   <MessageSquare className="w-4 h-4 text-emerald-950" />
                   <span>Chat on WhatsApp Instantly</span>
@@ -194,11 +194,11 @@ export default function ContactSection() {
 
             {/* Why Colleges Prefer DigiCampusPro Box */}
             <div className="bg-[#050E22]/90 border border-blue-900/40 rounded-3xl p-6 text-left">
-              <h4 className="text-sm font-bold text-amber-400 uppercase tracking-wider mb-3.5 flex items-center gap-2">
+              <h4 className="text-xs sm:text-sm font-semibold text-amber-400 tracking-wider mb-3.5 flex items-center gap-2">
                 <ShieldCheck className="w-4 h-4 text-amber-400" />
                 Institutional Onboarding Assurance
               </h4>
-              <ul className="space-y-2.5 text-xs sm:text-sm text-slate-300">
+              <ul className="space-y-2.5 text-xs sm:text-sm text-slate-300 font-normal">
                 <li className="flex items-start gap-2.5">
                   <span className="text-emerald-400 font-bold text-base leading-none">✓</span>
                   <span>100% Free live demo configured with your department syllabus</span>
@@ -224,14 +224,14 @@ export default function ContactSection() {
             <div className="bg-white rounded-3xl p-6 sm:p-10 shadow-2xl border border-slate-200 text-left relative overflow-hidden">
               {/* Form Header */}
               <div className="mb-6 pb-5 border-b border-slate-100">
-                <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-xs font-bold mb-2">
+                <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-xs font-semibold mb-2">
                   <GraduationCap className="w-3.5 h-3.5" />
                   <span>FREE INSTITUTIONAL DEMO</span>
                 </div>
-                <h3 className="text-2xl sm:text-3xl font-black text-slate-900 font-['Outfit',sans-serif]">
+                <h3 className="text-xl sm:text-2xl font-bold text-slate-900 font-['Outfit',sans-serif]">
                   Request an ERP Walkthrough
                 </h3>
-                <p className="text-xs sm:text-sm text-slate-500 mt-1">
+                <p className="text-xs sm:text-sm text-slate-500 mt-1 font-normal">
                   Tell us about your campus. We will customize your live walkthrough accordingly.
                 </p>
               </div>
@@ -242,20 +242,20 @@ export default function ContactSection() {
                   <div className="w-16 h-16 sm:w-20 sm:h-20 mx-auto rounded-full bg-emerald-50 border-2 border-emerald-500/20 flex items-center justify-center text-emerald-500 shadow-xl shadow-emerald-500/10">
                     <CheckCircle2 className="w-10 h-10 sm:w-12 sm:h-12" />
                   </div>
-                  <h4 className="text-2xl sm:text-3xl font-black text-slate-900 font-['Outfit',sans-serif]">
+                  <h4 className="text-xl sm:text-2xl font-bold text-slate-900 font-['Outfit',sans-serif]">
                     Demo Request Received!
                   </h4>
                   <p className="text-slate-600 text-sm max-w-md mx-auto leading-relaxed">
-                    Thank you, <strong className="text-slate-900">{formData.fullName || 'Valued Educator'}</strong>. We have assigned a campus technical specialist for <strong className="text-slate-900">{formData.collegeName || 'your institute'}</strong>.
+                    Thank you, <strong className="text-slate-900 font-semibold">{formData.fullName || 'Valued Educator'}</strong>. We have assigned a campus technical specialist for <strong className="text-slate-900 font-semibold">{formData.collegeName || 'your institute'}</strong>.
                   </p>
                   <div className="p-4 rounded-2xl bg-slate-50 border border-slate-200/80 max-w-md mx-auto text-xs text-slate-600">
-                    Our team will contact you at <strong className="text-blue-600">{formData.phone || formData.email}</strong> within 2 business hours with demo credentials.
+                    Our team will contact you at <strong className="text-blue-600 font-semibold">{formData.phone || formData.email}</strong> within 2 business hours with demo credentials.
                   </div>
                   <div className="pt-4">
                     <button
                       type="button"
                       onClick={handleReset}
-                      className="px-6 py-2.5 rounded-full text-xs sm:text-sm font-bold text-slate-900 bg-amber-400 hover:bg-amber-500 transition-all shadow-md cursor-pointer"
+                      className="px-6 py-2.5 rounded-full text-xs sm:text-sm font-semibold text-slate-900 bg-amber-400 hover:bg-amber-500 transition-all shadow-md cursor-pointer"
                     >
                       Submit Another Request
                     </button>
@@ -267,7 +267,7 @@ export default function ContactSection() {
                   {/* Row 1: Full Name & Email */}
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
-                      <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
+                      <label className="block text-xs font-semibold text-slate-700 mb-1.5">
                         Your Full Name <span className="text-rose-500">*</span>
                       </label>
                       <div className="relative">
@@ -278,13 +278,13 @@ export default function ContactSection() {
                           value={formData.fullName}
                           onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
                           placeholder="e.g. Dr. Rajesh Sharma"
-                          className="w-full pl-10 pr-4 py-2.5 rounded-xl border border-slate-200 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-blue-600/30 focus:border-blue-600 transition-all bg-slate-50/50 hover:bg-white"
+                          className="w-full pl-10 pr-4 py-2.5 rounded-xl border border-slate-200 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-blue-600/30 focus:border-blue-600 transition-all bg-slate-50/50 hover:bg-white font-normal"
                         />
                       </div>
                     </div>
 
                     <div>
-                      <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
+                      <label className="block text-xs font-semibold text-slate-700 mb-1.5">
                         Official Email <span className="text-rose-500">*</span>
                       </label>
                       <div className="relative">
@@ -295,7 +295,7 @@ export default function ContactSection() {
                           value={formData.email}
                           onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                           placeholder="principal@college.edu.in"
-                          className="w-full pl-10 pr-4 py-2.5 rounded-xl border border-slate-200 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-blue-600/30 focus:border-blue-600 transition-all bg-slate-50/50 hover:bg-white"
+                          className="w-full pl-10 pr-4 py-2.5 rounded-xl border border-slate-200 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-blue-600/30 focus:border-blue-600 transition-all bg-slate-50/50 hover:bg-white font-normal"
                         />
                       </div>
                     </div>
@@ -304,7 +304,7 @@ export default function ContactSection() {
                   {/* Row 2: Phone Number & College Name */}
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
-                      <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
+                      <label className="block text-xs font-semibold text-slate-700 mb-1.5">
                         Phone / WhatsApp <span className="text-rose-500">*</span>
                       </label>
                       <div className="relative">
@@ -315,13 +315,13 @@ export default function ContactSection() {
                           value={formData.phone}
                           onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                           placeholder="+91 98765 43210"
-                          className="w-full pl-10 pr-4 py-2.5 rounded-xl border border-slate-200 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-blue-600/30 focus:border-blue-600 transition-all bg-slate-50/50 hover:bg-white"
+                          className="w-full pl-10 pr-4 py-2.5 rounded-xl border border-slate-200 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-blue-600/30 focus:border-blue-600 transition-all bg-slate-50/50 hover:bg-white font-normal"
                         />
                       </div>
                     </div>
 
                     <div>
-                      <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
+                      <label className="block text-xs font-semibold text-slate-700 mb-1.5">
                         College / Institute Name <span className="text-rose-500">*</span>
                       </label>
                       <div className="relative">
@@ -332,7 +332,7 @@ export default function ContactSection() {
                           value={formData.collegeName}
                           onChange={(e) => setFormData({ ...formData, collegeName: e.target.value })}
                           placeholder="e.g. National Institute of Tech"
-                          className="w-full pl-10 pr-4 py-2.5 rounded-xl border border-slate-200 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-blue-600/30 focus:border-blue-600 transition-all bg-slate-50/50 hover:bg-white"
+                          className="w-full pl-10 pr-4 py-2.5 rounded-xl border border-slate-200 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-blue-600/30 focus:border-blue-600 transition-all bg-slate-50/50 hover:bg-white font-normal"
                         />
                       </div>
                     </div>
@@ -341,13 +341,13 @@ export default function ContactSection() {
                   {/* Row 3: Institution Type & Student Strength */}
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
-                      <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
+                      <label className="block text-xs font-semibold text-slate-700 mb-1.5">
                         Institution Type
                       </label>
                       <select
                         value={formData.institutionType}
                         onChange={(e) => setFormData({ ...formData, institutionType: e.target.value })}
-                        className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-blue-600/30 focus:border-blue-600 transition-all bg-slate-50/50 hover:bg-white"
+                        className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-blue-600/30 focus:border-blue-600 transition-all bg-slate-50/50 hover:bg-white font-normal"
                       >
                         <option value="Engineering / Polytechnic College">Engineering / Polytechnic College</option>
                         <option value="Degree & PG College">Degree & PG College</option>
@@ -359,13 +359,13 @@ export default function ContactSection() {
                     </div>
 
                     <div>
-                      <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
+                      <label className="block text-xs font-semibold text-slate-700 mb-1.5">
                         Total Student Strength
                       </label>
                       <select
                         value={formData.studentStrength}
                         onChange={(e) => setFormData({ ...formData, studentStrength: e.target.value })}
-                        className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-blue-600/30 focus:border-blue-600 transition-all bg-slate-50/50 hover:bg-white"
+                        className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-blue-600/30 focus:border-blue-600 transition-all bg-slate-50/50 hover:bg-white font-normal"
                       >
                         <option value="Up to 1,000 Students">Up to 1,000 Students</option>
                         <option value="1,000 - 3,000 Students">1,000 - 3,000 Students</option>
@@ -377,7 +377,7 @@ export default function ContactSection() {
 
                   {/* Modules of Interest Pills */}
                   <div>
-                    <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">
+                    <label className="block text-xs font-semibold text-slate-700 mb-2">
                       Select Primary Modules of Interest (Optional)
                     </label>
                     <div className="flex flex-wrap gap-2">
@@ -404,7 +404,7 @@ export default function ContactSection() {
 
                   {/* Message / Specific Requirements */}
                   <div>
-                    <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
+                    <label className="block text-xs font-semibold text-slate-700 mb-1.5">
                       Specific Requirements / Timelines (Optional)
                     </label>
                     <textarea
@@ -412,7 +412,7 @@ export default function ContactSection() {
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                       placeholder="Share any specific requirements e.g. biometric attendance integration, custom fee receipts, or rollout timeline..."
-                      className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-blue-600/30 focus:border-blue-600 transition-all bg-slate-50/50 hover:bg-white resize-none"
+                      className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-blue-600/30 focus:border-blue-600 transition-all bg-slate-50/50 hover:bg-white resize-none font-normal"
                     />
                   </div>
 
@@ -420,7 +420,7 @@ export default function ContactSection() {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full py-3.5 px-6 rounded-full text-sm sm:text-base font-bold text-slate-950 bg-gradient-to-r from-[#FDE047] via-[#FBBF24] to-[#F59E0B] hover:from-[#FBBF24] hover:to-[#D97706] shadow-xl shadow-amber-500/25 transition-all transform hover:scale-[1.01] active:scale-98 cursor-pointer flex items-center justify-center gap-2"
+                    className="w-full py-3.5 px-6 rounded-full text-sm sm:text-base font-semibold text-slate-950 bg-gradient-to-r from-[#FDE047] via-[#FBBF24] to-[#F59E0B] hover:from-[#FBBF24] hover:to-[#D97706] shadow-lg shadow-amber-500/20 transition-all transform hover:scale-[1.01] active:scale-98 cursor-pointer flex items-center justify-center gap-2"
                   >
                     {isSubmitting ? (
                       <>

@@ -159,10 +159,10 @@ export default function Footer() {
                 <a href="#contact" className="hover:text-blue-600 transition-colors">Documentation</a>
               </li>
               <li>
-                <a href="#home" className="hover:text-blue-600 transition-colors">Privacy Policy</a>
+                <Link to="/privacy-policy" className="hover:text-blue-600 transition-colors">Privacy Policy</Link>
               </li>
               <li>
-                <a href="#home" className="hover:text-blue-600 transition-colors">Terms & Conditions</a>
+                <Link to="/terms-conditions" className="hover:text-blue-600 transition-colors">Terms & Conditions</Link>
               </li>
               <li>
                 <a href="#contact" className="hover:text-blue-600 transition-colors">Contact Support</a>

@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { Link, useNavigate, useLocation } from 'react-router-dom'
 import { ArrowRight, Menu, X, ChevronRight } from 'lucide-react'
 import { NAV_LINKS } from '../../constants/navigation'
+import { scrollToSection } from '../../utils/smoothScroll'
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -12,7 +13,7 @@ export default function Navbar() {
   // Track active section as user scrolls
   useEffect(() => {
     const handleScroll = () => {
-      const scrollPosition = window.scrollY + 120 // offset for navbar
+      const scrollPosition = window.scrollY + 140 // offset for navbar
       const sectionIds = NAV_LINKS.map((link) => link.targetId)
 
       for (let i = sectionIds.length - 1; i >= 0; i--) {
@@ -42,18 +43,11 @@ export default function Navbar() {
     if (location.pathname !== '/') {
       navigate('/#' + targetId)
       setTimeout(() => {
-        const el = document.getElementById(targetId)
-        if (el) {
-          el.scrollIntoView({ behavior: 'smooth' })
-        }
-      }, 100)
+        scrollToSection(targetId, 80, 800)
+      }, 150)
     } else {
-      const el = document.getElementById(targetId)
-      if (el) {
-        el.scrollIntoView({ behavior: 'smooth' })
-        setActiveSection(targetId)
-        window.history.pushState(null, '', `#${targetId}`)
-      }
+      setActiveSection(targetId)
+      scrollToSection(targetId, 80, 800)
     }
   }
 

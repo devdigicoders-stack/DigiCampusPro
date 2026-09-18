@@ -1,17 +1,18 @@
 import { Link } from 'react-router-dom'
 import { Check, Headphones, ArrowRight, Sparkles, Sliders, ShieldCheck } from 'lucide-react'
+import { scrollToSection } from '../../utils/smoothScroll'
 
 export default function PricingSection() {
   return (
     <section id="pricing" className="relative bg-gradient-to-b from-[#F3F6FA] via-white to-[#F0F5FA] py-16 sm:py-20 px-4 sm:px-6 lg:px-8 overflow-hidden scroll-mt-20">
       <div className="max-w-7xl mx-auto text-center">
         {/* Top Pill Badge */}
-        <div className="inline-flex items-center gap-1.5 px-5 py-1.5 rounded-full text-xs font-black uppercase tracking-wider text-slate-950 bg-gradient-to-r from-amber-400 via-amber-500 to-amber-400 shadow-sm mb-3">
+        <div className="inline-flex items-center gap-1.5 px-5 py-1.5 rounded-full text-xs font-semibold tracking-wider text-slate-950 bg-gradient-to-r from-amber-400 via-amber-500 to-amber-400 shadow-sm mb-3">
           PRICING
         </div>
 
         {/* Section Main Heading */}
-        <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-black text-[#0B132B] tracking-tight font-['Outfit',sans-serif] mb-2">
+        <h2 className="text-3xl sm:text-4xl lg:text-[40px] font-bold text-[#0B132B] tracking-tight font-['Outfit',sans-serif] mb-2">
           Simple & Transparent Pricing
         </h2>
 
@@ -25,12 +26,12 @@ export default function PricingSection() {
           {/* Card 1: Basic Plan */}
           <div className="bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-7 shadow-[0_4px_25px_rgba(0,0,0,0.05)] border border-slate-100 flex flex-col justify-between hover:shadow-xl hover:border-blue-200 transition-all duration-300">
             <div>
-              <h3 className="text-xl font-bold text-slate-900 font-['Outfit',sans-serif]">Basic</h3>
-              <p className="text-xs text-slate-400 mt-0.5">Perfect for small institutes</p>
+              <h3 className="text-xl font-semibold text-slate-900 font-['Outfit',sans-serif]">Basic</h3>
+              <p className="text-xs text-slate-400 mt-0.5 font-normal">Perfect for small institutes</p>
 
               {/* Price */}
               <div className="flex items-baseline gap-1 my-6">
-                <span className="text-3xl sm:text-4xl font-black text-slate-900 font-['Outfit',sans-serif]">
+                <span className="text-3xl sm:text-4xl font-bold text-slate-900 font-['Outfit',sans-serif]">
                   ₹9,999
                 </span>
                 <span className="text-sm text-slate-500 font-medium">/year</span>
@@ -62,7 +63,7 @@ export default function PricingSection() {
               href="#contact"
               onClick={(e) => {
                 e.preventDefault()
-                document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })
+                scrollToSection('contact')
               }}
               className="w-full py-2.5 sm:py-3 rounded-xl text-sm font-bold text-blue-600 border-2 border-blue-600 hover:bg-blue-50 text-center transition-colors block cursor-pointer"
             >
@@ -74,19 +75,19 @@ export default function PricingSection() {
           <div className="bg-white rounded-2xl sm:rounded-3xl shadow-xl border-2 border-blue-900/10 flex flex-col justify-between overflow-hidden hover:shadow-2xl transition-all duration-300 transform lg:-translate-y-2 relative">
             {/* Top Dark Strip with "Most Popular" Golden Pill */}
             <div className="bg-[#0A1A3F] py-2 text-center flex items-center justify-center">
-              <span className="px-3.5 py-0.5 rounded-full text-[11px] font-extrabold uppercase tracking-wider text-slate-950 bg-gradient-to-r from-amber-400 via-amber-500 to-amber-400 shadow-xs">
+              <span className="px-3.5 py-0.5 rounded-full text-[11px] font-semibold tracking-wider text-slate-950 bg-gradient-to-r from-amber-400 via-amber-500 to-amber-400 shadow-xs">
                 Most Popular
               </span>
             </div>
 
             <div className="p-6 sm:p-7 flex-1 flex flex-col justify-between">
               <div>
-                <h3 className="text-xl font-bold text-slate-900 font-['Outfit',sans-serif]">Standard</h3>
-                <p className="text-xs text-slate-400 mt-0.5">Ideal for growing institutes</p>
+                <h3 className="text-xl font-semibold text-slate-900 font-['Outfit',sans-serif]">Standard</h3>
+                <p className="text-xs text-slate-400 mt-0.5 font-normal">Ideal for growing institutes</p>
 
                 {/* Price */}
                 <div className="flex items-baseline gap-1 my-6">
-                  <span className="text-3xl sm:text-4xl font-black text-slate-900 font-['Outfit',sans-serif]">
+                  <span className="text-3xl sm:text-4xl font-bold text-slate-900 font-['Outfit',sans-serif]">
                     ₹19,999
                   </span>
                   <span className="text-sm text-slate-500 font-medium">/year</span>
@@ -122,9 +123,9 @@ export default function PricingSection() {
                 href="#contact"
                 onClick={(e) => {
                   e.preventDefault()
-                  document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })
+                  scrollToSection('contact')
                 }}
-                className="w-full py-3 rounded-xl text-sm font-bold text-slate-950 bg-gradient-to-r from-amber-400 via-amber-500 to-amber-400 hover:from-amber-500 hover:to-amber-600 shadow-md hover:shadow-lg text-center transition-all block cursor-pointer"
+                className="w-full py-3 rounded-xl text-sm font-semibold text-slate-950 bg-gradient-to-r from-amber-400 via-amber-500 to-amber-400 hover:from-amber-500 hover:to-amber-600 shadow-md hover:shadow-lg text-center transition-all block cursor-pointer"
               >
                 Get Started
               </a>
@@ -134,12 +135,12 @@ export default function PricingSection() {
           {/* Card 3: Premium Plan */}
           <div className="bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-7 shadow-[0_4px_25px_rgba(0,0,0,0.05)] border border-slate-100 flex flex-col justify-between hover:shadow-xl hover:border-blue-200 transition-all duration-300">
             <div>
-              <h3 className="text-xl font-bold text-slate-900 font-['Outfit',sans-serif]">Premium</h3>
-              <p className="text-xs text-slate-400 mt-0.5">For large organizations</p>
+              <h3 className="text-xl font-semibold text-slate-900 font-['Outfit',sans-serif]">Premium</h3>
+              <p className="text-xs text-slate-400 mt-0.5 font-normal">For large organizations</p>
 
               {/* Price */}
               <div className="flex items-baseline gap-1 my-6">
-                <span className="text-3xl sm:text-4xl font-black text-slate-900 font-['Outfit',sans-serif]">
+                <span className="text-3xl sm:text-4xl font-bold text-slate-900 font-['Outfit',sans-serif]">
                   ₹49,999
                 </span>
                 <span className="text-sm text-slate-500 font-medium">/year</span>
@@ -175,9 +176,9 @@ export default function PricingSection() {
               href="#contact"
               onClick={(e) => {
                 e.preventDefault()
-                document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })
+                scrollToSection('contact')
               }}
-              className="w-full py-2.5 sm:py-3 rounded-xl text-sm font-bold text-blue-600 border-2 border-blue-600 hover:bg-blue-50 text-center transition-colors block cursor-pointer"
+              className="w-full py-2.5 sm:py-3 rounded-xl text-sm font-semibold text-blue-600 border-2 border-blue-600 hover:bg-blue-50 text-center transition-colors block cursor-pointer"
             >
               Get Started
             </a>
@@ -191,10 +192,10 @@ export default function PricingSection() {
                 <Headphones className="w-6 h-6" />
               </div>
 
-              <h3 className="text-lg sm:text-xl font-bold text-slate-900 font-['Outfit',sans-serif] leading-tight">
+              <h3 className="text-lg sm:text-xl font-semibold text-slate-900 font-['Outfit',sans-serif] leading-tight">
                 Still have questions?
               </h3>
-              <p className="text-xs sm:text-[13px] text-slate-600 mt-1.5 leading-relaxed">
+              <p className="text-xs sm:text-[13px] text-slate-600 mt-1.5 leading-relaxed font-normal">
                 Our team is here to help you choose the right plan.
               </p>
 
@@ -204,9 +205,9 @@ export default function PricingSection() {
                   href="#contact"
                   onClick={(e) => {
                     e.preventDefault()
-                    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })
+                    scrollToSection('contact')
                   }}
-                  className="w-full inline-flex items-center justify-center gap-2 py-2.5 sm:py-3 px-5 rounded-full text-xs sm:text-sm font-bold text-slate-950 bg-gradient-to-r from-amber-400 via-amber-500 to-amber-400 hover:from-amber-500 hover:to-amber-600 shadow-md hover:shadow-lg transition-all cursor-pointer"
+                  className="w-full inline-flex items-center justify-center gap-2 py-2.5 sm:py-3 px-5 rounded-full text-xs sm:text-sm font-semibold text-slate-950 bg-gradient-to-r from-amber-400 via-amber-500 to-amber-400 hover:from-amber-500 hover:to-amber-600 shadow-md hover:shadow-lg transition-all cursor-pointer"
                 >
                   <span>Contact Sales</span>
                   <ArrowRight className="w-3.5 h-3.5" />

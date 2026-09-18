@@ -52,12 +52,12 @@ export default function FaqSection() {
     <section className="relative bg-gradient-to-b from-[#F3F6FA] via-white to-[#F0F5FA] py-16 sm:py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
       <div className="max-w-7xl mx-auto text-center">
         {/* Top Pill Badge */}
-        <div className="inline-flex items-center gap-1.5 px-5 py-1.5 rounded-full text-xs font-black uppercase tracking-wider text-slate-950 bg-gradient-to-r from-amber-400 via-amber-500 to-amber-400 shadow-sm mb-3">
+        <div className="inline-flex items-center gap-1.5 px-5 py-1.5 rounded-full text-xs font-semibold tracking-wider text-slate-950 bg-gradient-to-r from-amber-400 via-amber-500 to-amber-400 shadow-sm mb-3">
           FAQ
         </div>
 
         {/* Section Main Heading */}
-        <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-black text-[#0B132B] tracking-tight font-['Outfit',sans-serif] mb-12 sm:mb-16">
+        <h2 className="text-3xl sm:text-4xl lg:text-[40px] font-bold text-[#0B132B] tracking-tight font-['Outfit',sans-serif] mb-12 sm:mb-16">
           Frequently Asked Questions
         </h2>
 
@@ -74,7 +74,7 @@ export default function FaqSection() {
                     onClick={() => toggleItem(faq.id)}
                     className="w-full flex items-center justify-between gap-4 text-left cursor-pointer group"
                   >
-                    <h3 className="font-bold text-slate-900 text-sm sm:text-base font-['Outfit',sans-serif] leading-snug group-hover:text-blue-600 transition-colors">
+                    <h3 className="font-semibold text-slate-900 text-sm sm:text-base font-['Outfit',sans-serif] leading-snug group-hover:text-blue-600 transition-colors">
                       {faq.question}
                     </h3>
                     <span className="text-slate-800 shrink-0">
@@ -110,7 +110,7 @@ export default function FaqSection() {
                     onClick={() => toggleItem(faq.id)}
                     className="w-full flex items-center justify-between gap-4 text-left cursor-pointer group"
                   >
-                    <h3 className="font-bold text-slate-900 text-sm sm:text-[15px] font-['Outfit',sans-serif] leading-snug group-hover:text-blue-600 transition-colors">
+                    <h3 className="font-semibold text-slate-900 text-sm sm:text-[15px] font-['Outfit',sans-serif] leading-snug group-hover:text-blue-600 transition-colors">
                       {faq.question}
                     </h3>
                     <span className="text-slate-800 shrink-0">

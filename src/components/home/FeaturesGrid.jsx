@@ -160,12 +160,12 @@ export default function FeaturesGrid() {
 
       <div className="max-w-7xl mx-auto text-center">
         {/* Section Pill Badge */}
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest text-blue-200 bg-blue-950/70 border border-blue-400/30 backdrop-blur-md shadow-sm mb-4">
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider text-blue-200 bg-blue-950/70 border border-blue-400/30 backdrop-blur-md shadow-sm mb-4">
           OUR FEATURES
         </div>
 
         {/* Section Heading */}
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight mb-3 font-['Outfit',sans-serif]">
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white tracking-tight mb-3 font-['Outfit',sans-serif]">
           Everything Your Institute <span className="text-[#F59E0B]">Needs</span>
         </h2>
 
@@ -187,7 +187,7 @@ export default function FeaturesGrid() {
               </div>
 
               {/* Title */}
-              <h3 className="text-xs sm:text-sm lg:text-[14px] font-bold text-white tracking-tight leading-snug font-['Outfit',sans-serif] group-hover:text-amber-300 transition-colors">
+              <h3 className="text-xs sm:text-sm lg:text-[14px] font-semibold text-white tracking-tight leading-snug font-['Outfit',sans-serif] group-hover:text-amber-300 transition-colors">
                 {item.title}
               </h3>
 

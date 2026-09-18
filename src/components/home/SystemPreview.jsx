@@ -214,28 +214,28 @@ export default function SystemPreview() {
               <div className="w-3.5 h-3.5 rounded bg-sky-100 text-sky-600 flex items-center justify-center mb-0.5">
                 <Users className="w-2 h-2" />
               </div>
-              <p className="text-[10px] sm:text-[11px] font-black text-slate-800 leading-none">2,548</p>
+              <p className="text-[10px] sm:text-[11px] font-semibold text-slate-800 leading-none">2,548</p>
               <p className="text-[6.5px] sm:text-[7px] text-slate-500 font-medium truncate">Total Students</p>
             </div>
             <div className="bg-rose-50 border border-rose-100 p-1 rounded text-left">
               <div className="w-3.5 h-3.5 rounded bg-rose-100 text-rose-600 flex items-center justify-center mb-0.5">
                 <GraduationCap className="w-2.5 h-2.5" />
               </div>
-              <p className="text-[10px] sm:text-[11px] font-black text-slate-800 leading-none">125</p>
+              <p className="text-[10px] sm:text-[11px] font-semibold text-slate-800 leading-none">125</p>
               <p className="text-[6.5px] sm:text-[7px] text-slate-500 font-medium truncate">Faculty Members</p>
             </div>
             <div className="bg-emerald-50 border border-emerald-100 p-1 rounded text-left">
               <div className="w-3.5 h-3.5 rounded bg-emerald-100 text-emerald-600 flex items-center justify-center mb-0.5">
                 <Building2 className="w-2.5 h-2.5" />
               </div>
-              <p className="text-[10px] sm:text-[11px] font-black text-slate-800 leading-none">12</p>
+              <p className="text-[10px] sm:text-[11px] font-semibold text-slate-800 leading-none">12</p>
               <p className="text-[6.5px] sm:text-[7px] text-slate-500 font-medium truncate">Departments</p>
             </div>
             <div className="bg-amber-50 border border-amber-100 p-1 rounded text-left">
               <div className="w-3.5 h-3.5 rounded bg-amber-100 text-amber-600 flex items-center justify-center mb-0.5">
                 <Activity className="w-2.5 h-2.5" />
               </div>
-              <p className="text-[10px] sm:text-[11px] font-black text-slate-800 leading-none">98%</p>
+              <p className="text-[10px] sm:text-[11px] font-semibold text-slate-800 leading-none">98%</p>
               <p className="text-[6.5px] sm:text-[7px] text-slate-500 font-medium truncate">Attendance Rate</p>
             </div>
           </div>
@@ -413,12 +413,12 @@ export default function SystemPreview() {
 
       <div className="max-w-7xl mx-auto text-center relative">
         {/* Top Pill Badge */}
-        <div className="inline-flex items-center gap-1.5 px-5 py-1.5 rounded-full text-xs font-black uppercase tracking-wider text-slate-950 bg-gradient-to-r from-amber-400 via-amber-500 to-amber-400 shadow-sm mb-3">
+        <div className="inline-flex items-center gap-1.5 px-5 py-1.5 rounded-full text-xs font-semibold tracking-wider text-slate-950 bg-gradient-to-r from-amber-400 via-amber-500 to-amber-400 shadow-sm mb-3">
           SYSTEM PREVIEW
         </div>
 
         {/* Main Heading */}
-        <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-black text-[#0B132B] tracking-tight font-['Outfit',sans-serif] mb-12 sm:mb-16">
+        <h2 className="text-3xl sm:text-4xl lg:text-[40px] font-bold text-[#0B132B] tracking-tight font-['Outfit',sans-serif] mb-12 sm:mb-16">
           A Glimpse of DigyCampusPro
         </h2>
 

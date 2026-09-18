@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { ArrowRight } from 'lucide-react'
+import { scrollToSection } from '../../utils/smoothScroll'
 
 export default function CtaBanner() {
   return (
@@ -20,7 +21,7 @@ export default function CtaBanner() {
           <div className="relative z-10 px-6 sm:px-12 lg:px-16 py-12 sm:py-14 lg:py-16 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
             {/* Left Content */}
             <div className="max-w-xl text-left">
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight font-['Outfit',sans-serif] mb-2.5 leading-snug">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight font-['Outfit',sans-serif] mb-2.5 leading-snug">
                 Ready to Transform Your Campus?
               </h2>
               <p className="text-xs sm:text-sm lg:text-base text-slate-200/90 leading-relaxed mb-6 font-normal">
@@ -33,9 +34,9 @@ export default function CtaBanner() {
                   href="#contact"
                   onClick={(e) => {
                     e.preventDefault()
-                    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })
+                    scrollToSection('contact')
                   }}
-                  className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full text-xs sm:text-sm font-bold text-slate-950 bg-gradient-to-r from-amber-400 via-amber-500 to-amber-400 hover:from-amber-500 hover:to-amber-600 shadow-md hover:shadow-lg transition-all active:scale-95 cursor-pointer"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full text-xs sm:text-sm font-semibold text-slate-950 bg-gradient-to-r from-amber-400 via-amber-500 to-amber-400 hover:from-amber-500 hover:to-amber-600 shadow-md hover:shadow-lg transition-all active:scale-95 cursor-pointer"
                 >
                   <span>Get Started Now</span>
                   <ArrowRight className="w-3.5 h-3.5" />
@@ -45,7 +46,7 @@ export default function CtaBanner() {
                   href="#contact"
                   onClick={(e) => {
                     e.preventDefault()
-                    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })
+                    scrollToSection('contact')
                   }}
                   className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full text-xs sm:text-sm font-semibold text-white border border-blue-300/40 bg-white/5 hover:bg-white/10 backdrop-blur-md transition-all active:scale-95 cursor-pointer"
                 >
