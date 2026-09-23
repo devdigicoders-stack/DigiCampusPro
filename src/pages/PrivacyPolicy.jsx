@@ -2,13 +2,8 @@ import { Link } from 'react-router-dom'
 import {
   ShieldCheck,
   Lock,
-  FileText,
-  Building2,
-  Database,
   ArrowLeft,
   Mail,
-  Phone,
-  MapPin,
   CheckCircle2,
   AlertCircle
 } from 'lucide-react'
