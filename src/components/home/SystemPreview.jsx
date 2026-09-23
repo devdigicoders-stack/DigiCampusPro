@@ -34,12 +34,12 @@ export default function SystemPreview() {
   const renderStudentsScreen = () => (
     <div className="rounded-xl overflow-hidden bg-[#F8FAFC] flex text-slate-800 select-none shadow-inner border border-slate-200 w-full aspect-[16/10]">
       {/* Sidebar */}
-      <div className="w-[30%] bg-[#0B132B] text-white p-2.5 flex flex-col justify-between border-r border-slate-800">
+      <div className="w-[30%] bg-[#05140D] text-white p-2.5 flex flex-col justify-between border-r border-emerald-950">
         <div className="space-y-3">
           <div className="flex items-center gap-1.5 pb-2 border-b border-white/10">
-            <div className="w-4 h-4 rounded bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center text-[9px] font-black text-white">D</div>
+            <div className="w-4 h-4 rounded bg-gradient-to-br from-[#008744] to-emerald-600 flex items-center justify-center text-[9px] font-black text-white">D</div>
             <span className="text-[10px] sm:text-xs font-bold tracking-tight text-white font-['Outfit',sans-serif]">
-              DigyCampus<span className="text-[#F59E0B]">Pro</span>
+              Digi<span className="text-[#008744]">Campus</span><span className="text-[#FF7A00]">Pro</span>
             </span>
           </div>
           <div className="space-y-0.5 text-[8.5px] sm:text-[9.5px] font-medium">
@@ -47,7 +47,7 @@ export default function SystemPreview() {
               <LayoutDashboard className="w-3 h-3" />
               <span>Dashboard</span>
             </div>
-            <div className="flex items-center gap-1.5 px-2 py-1 rounded bg-blue-600 text-white font-semibold">
+            <div className="flex items-center gap-1.5 px-2 py-1 rounded bg-[#008744] text-white font-semibold">
               <Users className="w-3 h-3" />
               <span>Students</span>
             </div>
@@ -103,7 +103,7 @@ export default function SystemPreview() {
             ].map((student, idx) => (
               <div key={idx} className="flex items-center justify-between py-1 px-2 rounded bg-slate-50/70 border border-slate-100">
                 <div className="flex items-center gap-1.5">
-                  <div className="w-4 h-4 rounded-full bg-blue-100 text-blue-700 font-bold text-[7px] flex items-center justify-center">
+                  <div className="w-4 h-4 rounded-full bg-emerald-100 text-[#008744] font-bold text-[7px] flex items-center justify-center">
                     {student.name.charAt(0)}
                   </div>
                   <span className="font-semibold text-slate-800">{student.name}</span>
@@ -125,17 +125,17 @@ export default function SystemPreview() {
   const renderDashboardScreen = () => (
     <div className="rounded-xl overflow-hidden bg-[#F8FAFC] flex text-slate-800 select-none shadow-inner border border-slate-200 w-full aspect-[16/10]">
       {/* Sidebar */}
-      <div className="w-[30%] bg-[#0B132B] text-white p-2.5 flex flex-col justify-between border-r border-slate-800">
+      <div className="w-[30%] bg-[#05140D] text-white p-2.5 flex flex-col justify-between border-r border-emerald-950">
         <div className="space-y-3">
           <div className="flex items-center gap-1.5 pb-2 border-b border-white/10">
-            <div className="w-4 h-4 rounded bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center text-[9px] font-black text-white">D</div>
+            <div className="w-4 h-4 rounded bg-gradient-to-br from-[#008744] to-emerald-600 flex items-center justify-center text-[9px] font-black text-white">D</div>
             <span className="text-[10px] sm:text-xs font-bold tracking-tight text-white font-['Outfit',sans-serif]">
-              DigyCampus<span className="text-[#F59E0B]">Pro</span>
+              Digi<span className="text-[#008744]">Campus</span><span className="text-[#FF7A00]">Pro</span>
             </span>
           </div>
 
           <div className="space-y-0.5 text-[8.5px] sm:text-[9.5px] font-medium">
-            <div className="flex items-center gap-1.5 px-2 py-1 rounded bg-blue-600 text-white font-semibold">
+            <div className="flex items-center gap-1.5 px-2 py-1 rounded bg-[#008744] text-white font-semibold">
               <LayoutDashboard className="w-3 h-3" />
               <span>Dashboard</span>
             </div>
@@ -189,7 +189,7 @@ export default function SystemPreview() {
                 <Bell className="w-2 h-2" />
               </div>
               <div className="flex items-center gap-1">
-                <div className="w-4 h-4 rounded-full bg-blue-600 text-white font-bold text-[7px] flex items-center justify-center">
+                <div className="w-4 h-4 rounded-full bg-[#008744] text-white font-bold text-[7px] flex items-center justify-center">
                   AD
                 </div>
                 <span className="font-bold text-slate-700 hidden sm:inline text-[8px]">Admin</span>
@@ -246,12 +246,12 @@ export default function SystemPreview() {
             <div className="col-span-6 bg-white p-1.5 rounded-lg border border-slate-200/80 shadow-xs">
               <div className="flex items-center justify-between pb-0.5 border-b border-slate-100 mb-0.5">
                 <span className="text-[8px] font-bold text-slate-800">Latest Activities</span>
-                <span className="text-[6.5px] font-semibold text-blue-600">View All</span>
+                <span className="text-[6.5px] font-semibold text-[#008744]">View All</span>
               </div>
               <div className="space-y-0.5 text-[6.5px]">
                 <div className="flex items-center justify-between">
                   <span className="flex items-center gap-1 text-slate-700 truncate">
-                    <span className="w-1 h-1 rounded-full bg-blue-500 shrink-0" />
+                    <span className="w-1 h-1 rounded-full bg-[#008744] shrink-0" />
                     New Admission - Rahul
                   </span>
                   <span className="text-[6px] text-slate-400 shrink-0">10:24 AM</span>
@@ -277,31 +277,31 @@ export default function SystemPreview() {
             <div className="col-span-6 bg-white p-1.5 rounded-lg border border-slate-200/80 shadow-xs flex flex-col justify-between">
               <div className="flex items-center justify-between pb-0.5 border-b border-slate-100 mb-0.5">
                 <span className="text-[8px] font-bold text-slate-800">Overall Stats</span>
-                <span className="text-[6.5px] font-semibold text-blue-600">View All</span>
+                <span className="text-[6.5px] font-semibold text-[#008744]">View All</span>
               </div>
               <div className="flex items-end justify-between h-10 pt-0.5 px-1 gap-0.5">
                 <div className="flex-1 flex flex-col items-center gap-0.5">
-                  <div className="w-full bg-blue-300 rounded-t-xs h-5" />
+                  <div className="w-full bg-emerald-200 rounded-t-xs h-5" />
                   <span className="text-[5.5px] text-slate-400">Feb</span>
                 </div>
                 <div className="flex-1 flex flex-col items-center gap-0.5">
-                  <div className="w-full bg-blue-400 rounded-t-xs h-7" />
+                  <div className="w-full bg-emerald-300 rounded-t-xs h-7" />
                   <span className="text-[5.5px] text-slate-400">Mar</span>
                 </div>
                 <div className="flex-1 flex flex-col items-center gap-0.5">
-                  <div className="w-full bg-blue-500 rounded-t-xs h-9" />
+                  <div className="w-full bg-emerald-400 rounded-t-xs h-9" />
                   <span className="text-[5.5px] text-slate-400">Apr</span>
                 </div>
                 <div className="flex-1 flex flex-col items-center gap-0.5">
-                  <div className="w-full bg-blue-400 rounded-t-xs h-6" />
+                  <div className="w-full bg-emerald-300 rounded-t-xs h-6" />
                   <span className="text-[5.5px] text-slate-400">May</span>
                 </div>
                 <div className="flex-1 flex flex-col items-center gap-0.5">
-                  <div className="w-full bg-blue-600 rounded-t-xs h-10" />
+                  <div className="w-full bg-[#008744] rounded-t-xs h-10" />
                   <span className="text-[5.5px] text-slate-400">Jun</span>
                 </div>
                 <div className="flex-1 flex flex-col items-center gap-0.5">
-                  <div className="w-full bg-blue-700 rounded-t-xs h-11" />
+                  <div className="w-full bg-[#FF7A00] rounded-t-xs h-11" />
                   <span className="text-[5.5px] text-slate-400">Jul</span>
                 </div>
               </div>
@@ -316,12 +316,12 @@ export default function SystemPreview() {
   const renderFeesScreen = () => (
     <div className="rounded-xl overflow-hidden bg-[#F8FAFC] flex text-slate-800 select-none shadow-inner border border-slate-200 w-full aspect-[16/10]">
       {/* Sidebar */}
-      <div className="w-[30%] bg-[#0B132B] text-white p-2.5 flex flex-col justify-between border-r border-slate-800">
+      <div className="w-[30%] bg-[#05140D] text-white p-2.5 flex flex-col justify-between border-r border-emerald-950">
         <div className="space-y-3">
           <div className="flex items-center gap-1.5 pb-2 border-b border-white/10">
-            <div className="w-4 h-4 rounded bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center text-[9px] font-black text-white">D</div>
+            <div className="w-4 h-4 rounded bg-gradient-to-br from-[#008744] to-emerald-600 flex items-center justify-center text-[9px] font-black text-white">D</div>
             <span className="text-[10px] sm:text-xs font-bold tracking-tight text-white font-['Outfit',sans-serif]">
-              DigyCampus<span className="text-[#F59E0B]">Pro</span>
+              Digi<span className="text-[#008744]">Campus</span><span className="text-[#FF7A00]">Pro</span>
             </span>
           </div>
           <div className="space-y-0.5 text-[8.5px] sm:text-[9.5px] font-medium">
@@ -341,7 +341,7 @@ export default function SystemPreview() {
               <FileText className="w-3 h-3" />
               <span>Examinations</span>
             </div>
-            <div className="flex items-center gap-1.5 px-2 py-1 rounded bg-blue-600 text-white font-semibold">
+            <div className="flex items-center gap-1.5 px-2 py-1 rounded bg-[#008744] text-white font-semibold">
               <CreditCard className="w-3 h-3" />
               <span>Fees & Finance</span>
             </div>
@@ -363,7 +363,7 @@ export default function SystemPreview() {
               <p className="text-[8px] text-slate-400">Real-time collections & ledger settlement</p>
             </div>
             <div className="flex items-center gap-1">
-              <span className="px-2 py-0.5 rounded bg-blue-50 text-blue-700 font-bold text-[8px] border border-blue-200">
+              <span className="px-2 py-0.5 rounded bg-emerald-50 text-[#008744] font-bold text-[8px] border border-emerald-200">
                 All Transactions
               </span>
             </div>
@@ -407,19 +407,19 @@ export default function SystemPreview() {
   const rightIndex = (activeScreen + 1) % 3
 
   return (
-    <section id="modules" className="relative bg-gradient-to-b from-[#F3F6FA] via-white to-[#F0F5FA] py-16 sm:py-20 px-4 sm:px-6 lg:px-8 overflow-hidden scroll-mt-20">
+    <section id="modules" className="relative bg-gradient-to-b from-[#F0FDF4] via-white to-[#E8F5EE] py-16 sm:py-20 px-4 sm:px-6 lg:px-8 overflow-hidden scroll-mt-20">
       {/* Background delicate curved wave grid texture */}
-      <div className="absolute inset-0 bg-[radial-gradient(#1E4ED8_1px,transparent_1px)] [background-size:24px_24px] opacity-10 pointer-events-none" />
+      <div className="absolute inset-0 bg-[radial-gradient(#008744_1px,transparent_1px)] [background-size:24px_24px] opacity-10 pointer-events-none" />
 
       <div className="max-w-7xl mx-auto text-center relative">
         {/* Top Pill Badge */}
-        <div className="inline-flex items-center gap-1.5 px-5 py-1.5 rounded-full text-xs font-semibold tracking-wider text-slate-950 bg-gradient-to-r from-amber-400 via-amber-500 to-amber-400 shadow-sm mb-3">
+        <div className="inline-flex items-center gap-1.5 px-5 py-1.5 rounded-full text-xs font-semibold tracking-wider text-slate-950 bg-gradient-to-r from-amber-400 via-orange-500 to-orange-600 shadow-sm mb-3">
           SYSTEM PREVIEW
         </div>
 
         {/* Main Heading */}
-        <h2 className="text-3xl sm:text-4xl lg:text-[40px] font-bold text-[#0B132B] tracking-tight font-['Outfit',sans-serif] mb-12 sm:mb-16">
-          A Glimpse of DigyCampusPro
+        <h2 className="text-3xl sm:text-4xl lg:text-[40px] font-bold text-[#04140D] tracking-tight font-['Outfit',sans-serif] mb-12 sm:mb-16">
+          A Glimpse of DigiCampusPro
         </h2>
 
         {/* 3D Showcase Carousel Area with Left & Right Circular Nav Buttons */}
@@ -428,7 +428,7 @@ export default function SystemPreview() {
           <button
             type="button"
             onClick={handlePrev}
-            className="absolute left-1 sm:left-4 lg:left-8 top-1/2 -translate-y-1/2 z-30 w-11 h-11 sm:w-13 sm:h-13 rounded-full bg-[#1E4ED8] hover:bg-blue-700 text-white shadow-xl shadow-blue-600/30 flex items-center justify-center transition-all duration-200 hover:scale-110 active:scale-95 cursor-pointer"
+            className="absolute left-1 sm:left-4 lg:left-8 top-1/2 -translate-y-1/2 z-30 w-11 h-11 sm:w-13 sm:h-13 rounded-full bg-[#008744] hover:bg-[#007338] text-white shadow-xl shadow-emerald-600/30 flex items-center justify-center transition-all duration-200 hover:scale-110 active:scale-95 cursor-pointer"
             aria-label="Previous preview screen"
           >
             <ChevronLeft className="w-6 h-6" />
@@ -438,7 +438,7 @@ export default function SystemPreview() {
           <button
             type="button"
             onClick={handleNext}
-            className="absolute right-1 sm:right-4 lg:right-8 top-1/2 -translate-y-1/2 z-30 w-11 h-11 sm:w-13 sm:h-13 rounded-full bg-[#1E4ED8] hover:bg-blue-700 text-white shadow-xl shadow-blue-600/30 flex items-center justify-center transition-all duration-200 hover:scale-110 active:scale-95 cursor-pointer"
+            className="absolute right-1 sm:right-4 lg:right-8 top-1/2 -translate-y-1/2 z-30 w-11 h-11 sm:w-13 sm:h-13 rounded-full bg-[#008744] hover:bg-[#007338] text-white shadow-xl shadow-emerald-600/30 flex items-center justify-center transition-all duration-200 hover:scale-110 active:scale-95 cursor-pointer"
             aria-label="Next preview screen"
           >
             <ChevronRight className="w-6 h-6" />

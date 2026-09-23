@@ -4,10 +4,10 @@ import { scrollToSection } from '../../utils/smoothScroll'
 
 export default function CtaBanner() {
   return (
-    <section className="relative bg-gradient-to-b from-[#F3F6FA] via-white to-[#F0F5FA] py-12 sm:py-16 px-4 sm:px-6 lg:px-8 overflow-hidden">
+    <section className="relative bg-gradient-to-b from-[#F0FDF4] via-white to-[#E8F5EE] py-12 sm:py-16 px-4 sm:px-6 lg:px-8 overflow-hidden">
       <div className="max-w-7xl mx-auto">
         {/* Main Rounded Banner Card */}
-        <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl bg-[#030B1E] border border-blue-900/40">
+        <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl bg-[#030F0A] border border-emerald-900/50">
           {/* Background Image (Campus building from hero.png) */}
           <div
             className="absolute inset-0 bg-cover bg-right lg:bg-center bg-no-repeat pointer-events-none"
@@ -15,7 +15,7 @@ export default function CtaBanner() {
           />
 
           {/* Left-to-right gradient overlay to ensure perfect contrast and text readability */}
-          <div className="absolute inset-0 bg-gradient-to-r from-[#020716] via-[#041130]/95 lg:via-[#041130]/85 to-transparent pointer-events-none" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#020C07] via-[#04160E]/95 lg:via-[#04160E]/85 to-transparent pointer-events-none" />
 
           {/* Banner Content Container */}
           <div className="relative z-10 px-6 sm:px-12 lg:px-16 py-12 sm:py-14 lg:py-16 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
@@ -24,8 +24,8 @@ export default function CtaBanner() {
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight font-['Outfit',sans-serif] mb-2.5 leading-snug">
                 Ready to Transform Your Campus?
               </h2>
-              <p className="text-xs sm:text-sm lg:text-base text-slate-200/90 leading-relaxed mb-6 font-normal">
-                Join hundreds of institutes already using DigyCampusPro. Take the first step towards a smarter, digital future.
+              <p className="text-xs sm:text-sm lg:text-base text-emerald-100/80 leading-relaxed mb-6 font-normal">
+                Join hundreds of institutes already using DigiCampusPro. Take the first step towards a smarter, digital future.
               </p>
 
               {/* Action Buttons */}
@@ -36,7 +36,7 @@ export default function CtaBanner() {
                     e.preventDefault()
                     scrollToSection('contact')
                   }}
-                  className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full text-xs sm:text-sm font-semibold text-slate-950 bg-gradient-to-r from-amber-400 via-amber-500 to-amber-400 hover:from-amber-500 hover:to-amber-600 shadow-md hover:shadow-lg transition-all active:scale-95 cursor-pointer"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full text-xs sm:text-sm font-semibold text-white bg-gradient-to-r from-[#FFA000] via-[#FF8000] to-[#FF6000] hover:from-[#FFB020] hover:to-[#E65C00] shadow-lg shadow-orange-500/25 hover:shadow-orange-500/40 transition-all active:scale-95 cursor-pointer"
                 >
                   <span>Get Started Now</span>
                   <ArrowRight className="w-3.5 h-3.5" />
@@ -48,7 +48,7 @@ export default function CtaBanner() {
                     e.preventDefault()
                     scrollToSection('contact')
                   }}
-                  className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full text-xs sm:text-sm font-semibold text-white border border-blue-300/40 bg-white/5 hover:bg-white/10 backdrop-blur-md transition-all active:scale-95 cursor-pointer"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full text-xs sm:text-sm font-semibold text-white border border-emerald-500/40 bg-emerald-950/40 hover:bg-emerald-900/50 backdrop-blur-md transition-all active:scale-95 cursor-pointer"
                 >
                   Contact Us
                 </a>
@@ -57,7 +57,7 @@ export default function CtaBanner() {
 
             {/* Right Side: Handwritten Callout matching reference */}
             <div className="hidden lg:flex flex-col items-center justify-center relative select-none pointer-events-none self-start xl:mr-16">
-              <span className="text-2xl xl:text-3xl text-white font-['Caveat',cursive] leading-tight font-bold -rotate-6 drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
+              <span className="text-2xl xl:text-3xl text-[#FFA000] font-['Caveat',cursive] leading-tight font-bold -rotate-6 drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
                 Education <br />
                 Reimagined
               </span>

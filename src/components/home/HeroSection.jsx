@@ -24,7 +24,7 @@ export default function HeroSection() {
   const [showVideoModal, setShowVideoModal] = useState(false)
 
   return (
-    <section id="home" className="relative min-h-[calc(100vh-5rem)] lg:h-[calc(100vh-5rem)] flex items-center justify-center overflow-hidden bg-[#030B1E] scroll-mt-20">
+    <section id="home" className="relative min-h-[calc(100vh-5rem)] lg:h-[calc(100vh-5rem)] flex items-center justify-center overflow-hidden bg-[#020C07] scroll-mt-20">
       {/* Background Image with optimized scaling to fit screen viewport */}
       <div
         className="absolute inset-0 bg-cover bg-bottom lg:bg-center bg-no-repeat pointer-events-none"
@@ -32,29 +32,33 @@ export default function HeroSection() {
       />
 
       {/* Gradient overlays to ensure maximum text readability and contrast */}
-      <div className="absolute inset-0 bg-gradient-to-r from-[#020716] via-[#040F2C]/90 lg:via-[#040F2C]/75 to-transparent pointer-events-none" />
-      <div className="absolute inset-0 bg-gradient-to-t from-[#020716]/60 via-transparent to-transparent pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-r from-[#020C07] via-[#04160E]/90 lg:via-[#04160E]/75 to-transparent pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-t from-[#020C07]/70 via-transparent to-transparent pointer-events-none" />
+
+      {/* Ambient glows matching brand colors */}
+      <div className="absolute top-10 left-10 w-96 h-96 bg-emerald-600/15 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute bottom-10 right-20 w-80 h-80 bg-orange-500/10 rounded-full blur-[120px] pointer-events-none" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6 lg:py-4 w-full z-10 flex flex-col justify-center h-full">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-6 items-center">
           {/* Left Column: Headline, Description, CTAs, Stats */}
           <div className="lg:col-span-6 space-y-4 text-left">
             {/* Pill Badge */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-semibold text-blue-200 bg-blue-950/70 border border-blue-400/30 backdrop-blur-md shadow-sm">
-              <span className="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse" />
+            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-semibold text-emerald-200 bg-emerald-950/70 border border-emerald-400/30 backdrop-blur-md shadow-sm">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#FF7A00] animate-pulse" />
               All-in-One ERP for Modern Educational Institutes
             </div>
 
             {/* Main Headline */}
             <h1 className="text-3xl sm:text-4xl lg:text-[44px] xl:text-[50px] font-bold text-white tracking-tight leading-[1.16] font-['Outfit',sans-serif]">
               Digitize Today <br />
-              Build a <span className="text-[#F59E0B]">Better</span> <br />
-              <span className="text-[#F59E0B]">Tomorrow</span>
+              Build a <span className="text-[#FF7A00]">Better</span> <br />
+              <span className="text-[#FF7A00]">Tomorrow</span>
             </h1>
 
             {/* Subparagraph */}
             <p className="text-xs sm:text-sm lg:text-[15px] text-slate-200/90 leading-relaxed max-w-lg font-normal">
-              DigyCampusPro is a powerful, all-in-one ERP solution designed for Polytechnics, Colleges & Academic Institutes to simplify management, enhance learning and empower growth.
+              DigiCampusPro is a powerful, all-in-one ERP solution designed for Polytechnics, Colleges & Academic Institutes to simplify management, enhance learning and empower growth.
             </p>
 
             {/* Action Buttons */}
@@ -65,7 +69,7 @@ export default function HeroSection() {
                   e.preventDefault()
                   scrollToSection('contact')
                 }}
-                className="inline-flex items-center justify-center gap-2 px-6 py-2.5 sm:px-7 sm:py-3 rounded-full text-xs sm:text-sm font-semibold text-[#08132B] bg-gradient-to-r from-[#FDE047] via-[#FBBF24] to-[#F59E0B] shadow-[0_0_18px_rgba(245,158,11,0.35)] hover:shadow-[0_0_24px_rgba(245,158,11,0.55)] transition-all transform hover:scale-105 active:scale-95 cursor-pointer"
+                className="inline-flex items-center justify-center gap-2 px-6 py-2.5 sm:px-7 sm:py-3 rounded-full text-xs sm:text-sm font-semibold text-slate-950 bg-gradient-to-r from-[#FFA000] via-[#FF8000] to-[#FF6000] shadow-[0_0_18px_rgba(255,122,0,0.35)] hover:shadow-[0_0_24px_rgba(255,122,0,0.55)] transition-all transform hover:scale-105 active:scale-95 cursor-pointer"
               >
                 <span>Request a Demo</span>
                 <ArrowRight className="w-3.5 h-3.5" />
@@ -74,7 +78,7 @@ export default function HeroSection() {
               <button
                 type="button"
                 onClick={() => setShowVideoModal(true)}
-                className="inline-flex items-center justify-center gap-2 px-5 py-2.5 sm:px-6 sm:py-3 rounded-full text-xs sm:text-sm font-semibold text-white border border-blue-300/40 bg-white/5 hover:bg-white/10 backdrop-blur-md shadow-sm transition-all hover:border-blue-300 active:scale-95 cursor-pointer group"
+                className="inline-flex items-center justify-center gap-2 px-5 py-2.5 sm:px-6 sm:py-3 rounded-full text-xs sm:text-sm font-semibold text-white border border-emerald-300/40 bg-white/5 hover:bg-white/10 backdrop-blur-md shadow-sm transition-all hover:border-emerald-300 active:scale-95 cursor-pointer group"
               >
                 <div className="w-5 h-5 rounded-full bg-white/20 flex items-center justify-center transition-transform group-hover:scale-110">
                   <Play className="w-2.5 h-2.5 fill-white text-white ml-0.5" />
@@ -84,9 +88,9 @@ export default function HeroSection() {
             </div>
 
             {/* Stats Row */}
-            <div className="grid grid-cols-3 gap-4 sm:gap-6 pt-4 sm:pt-5 border-t border-blue-900/40 max-w-md">
+            <div className="grid grid-cols-3 gap-4 sm:gap-6 pt-4 sm:pt-5 border-t border-emerald-900/40 max-w-md">
               <div>
-                <p className="text-xl sm:text-2xl font-bold text-[#F59E0B] font-['Outfit',sans-serif]">
+                <p className="text-xl sm:text-2xl font-bold text-[#FF7A00] font-['Outfit',sans-serif]">
                   500+
                 </p>
                 <p className="text-[11px] sm:text-xs text-slate-300 mt-0.5 font-normal">
@@ -94,7 +98,7 @@ export default function HeroSection() {
                 </p>
               </div>
               <div>
-                <p className="text-xl sm:text-2xl font-bold text-[#F59E0B] font-['Outfit',sans-serif]">
+                <p className="text-xl sm:text-2xl font-bold text-[#FF7A00] font-['Outfit',sans-serif]">
                   50K+
                 </p>
                 <p className="text-[11px] sm:text-xs text-slate-300 mt-0.5 font-normal">
@@ -102,7 +106,7 @@ export default function HeroSection() {
                 </p>
               </div>
               <div>
-                <p className="text-xl sm:text-2xl font-bold text-[#F59E0B] font-['Outfit',sans-serif]">
+                <p className="text-xl sm:text-2xl font-bold text-[#FF7A00] font-['Outfit',sans-serif]">
                   99.9%
                 </p>
                 <p className="text-[11px] sm:text-xs text-slate-300 mt-0.5 font-normal">
@@ -143,22 +147,22 @@ export default function HeroSection() {
 
                 {/* Dashboard Inner Display */}
                 <div className="rounded-md overflow-hidden bg-[#F8FAFC] flex text-slate-800 select-none shadow-inner border border-slate-200">
-                  {/* Dashboard Sidebar (Deep Navy #0B132B) */}
-                  <div className="w-[30%] bg-[#0B132B] text-white p-2 flex flex-col justify-between border-r border-slate-800">
+                  {/* Dashboard Sidebar (Deep Forest #05140D) */}
+                  <div className="w-[30%] bg-[#05140D] text-white p-2 flex flex-col justify-between border-r border-emerald-950">
                     <div className="space-y-2.5">
                       {/* Sidebar Logo Header */}
                       <div className="flex items-center gap-1 pb-1.5 border-b border-white/10">
-                        <div className="w-4 h-4 rounded bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center text-[9px] font-black text-white">
+                        <div className="w-4 h-4 rounded bg-gradient-to-br from-[#008744] to-emerald-600 flex items-center justify-center text-[9px] font-black text-white">
                           D
                         </div>
                         <span className="text-[10px] font-bold tracking-tight text-white font-['Outfit',sans-serif]">
-                          DigyCampus<span className="text-[#F59E0B]">Pro</span>
+                          Digi<span className="text-[#008744]">Campus</span><span className="text-[#FF7A00]">Pro</span>
                         </span>
                       </div>
 
                       {/* Nav Tabs inside Sidebar */}
                       <div className="space-y-0.5 text-[8.5px] font-medium">
-                        <div className="flex items-center gap-1.5 px-1.5 py-0.5 rounded bg-blue-600 text-white font-semibold">
+                        <div className="flex items-center gap-1.5 px-1.5 py-0.5 rounded bg-[#008744] text-white font-semibold">
                           <LayoutDashboard className="w-2.5 h-2.5" />
                           <span>Dashboard</span>
                         </div>
@@ -212,7 +216,7 @@ export default function HeroSection() {
                             <Bell className="w-2 h-2" />
                           </div>
                           <div className="flex items-center gap-1">
-                            <div className="w-4 h-4 rounded-full bg-blue-600 text-white font-bold text-[7px] flex items-center justify-center">
+                            <div className="w-4 h-4 rounded-full bg-[#008744] text-white font-bold text-[7px] flex items-center justify-center">
                               AD
                             </div>
                             <span className="font-bold text-slate-700 hidden sm:inline text-[8px]">Admin</span>
@@ -234,8 +238,8 @@ export default function HeroSection() {
                       {/* 4 Metric Cards */}
                       <div className="grid grid-cols-4 gap-1 mb-2">
                         {/* Students Card */}
-                        <div className="bg-sky-50 border border-sky-100 p-1 rounded text-left">
-                          <div className="w-3.5 h-3.5 rounded bg-sky-100 text-sky-600 flex items-center justify-center mb-0.5">
+                        <div className="bg-emerald-50 border border-emerald-100 p-1 rounded text-left">
+                          <div className="w-3.5 h-3.5 rounded bg-emerald-100 text-[#008744] flex items-center justify-center mb-0.5">
                             <Users className="w-2 h-2" />
                           </div>
                           <p className="text-[10px] font-semibold text-slate-800 leading-none">2,548</p>
@@ -243,8 +247,8 @@ export default function HeroSection() {
                         </div>
 
                         {/* Faculty Card */}
-                        <div className="bg-rose-50 border border-rose-100 p-1 rounded text-left">
-                          <div className="w-3.5 h-3.5 rounded bg-rose-100 text-rose-600 flex items-center justify-center mb-0.5">
+                        <div className="bg-orange-50 border border-orange-100 p-1 rounded text-left">
+                          <div className="w-3.5 h-3.5 rounded bg-orange-100 text-orange-600 flex items-center justify-center mb-0.5">
                             <GraduationCap className="w-2.5 h-2.5" />
                           </div>
                           <p className="text-[10px] font-semibold text-slate-800 leading-none">125</p>
@@ -252,8 +256,8 @@ export default function HeroSection() {
                         </div>
 
                         {/* Departments Card */}
-                        <div className="bg-emerald-50 border border-emerald-100 p-1 rounded text-left">
-                          <div className="w-3.5 h-3.5 rounded bg-emerald-100 text-emerald-600 flex items-center justify-center mb-0.5">
+                        <div className="bg-sky-50 border border-sky-100 p-1 rounded text-left">
+                          <div className="w-3.5 h-3.5 rounded bg-sky-100 text-[#0077D4] flex items-center justify-center mb-0.5">
                             <Building2 className="w-2 h-2" />
                           </div>
                           <p className="text-[10px] font-semibold text-slate-800 leading-none">12</p>
@@ -261,8 +265,8 @@ export default function HeroSection() {
                         </div>
 
                         {/* Attendance Card */}
-                        <div className="bg-amber-50 border border-amber-100 p-1 rounded text-left">
-                          <div className="w-3.5 h-3.5 rounded bg-amber-100 text-amber-600 flex items-center justify-center mb-0.5">
+                        <div className="bg-emerald-50 border border-emerald-100 p-1 rounded text-left">
+                          <div className="w-3.5 h-3.5 rounded bg-emerald-100 text-[#008744] flex items-center justify-center mb-0.5">
                             <Activity className="w-2 h-2" />
                           </div>
                           <p className="text-[10px] font-semibold text-slate-800 leading-none">98%</p>
@@ -276,19 +280,19 @@ export default function HeroSection() {
                         <div className="col-span-6 bg-white p-1.5 rounded border border-slate-200/80 shadow-xs">
                           <div className="flex items-center justify-between pb-0.5 border-b border-slate-100 mb-0.5">
                             <span className="text-[8px] font-bold text-slate-800">Latest Activities</span>
-                            <span className="text-[6.5px] font-semibold text-blue-600">View All</span>
+                            <span className="text-[6.5px] font-semibold text-[#008744]">View All</span>
                           </div>
                           <div className="space-y-0.5 text-[6.5px]">
                             <div className="flex items-center justify-between">
                               <span className="flex items-center gap-1 text-slate-700 truncate">
-                                <span className="w-1 h-1 rounded-full bg-blue-500 shrink-0" />
+                                <span className="w-1 h-1 rounded-full bg-[#008744] shrink-0" />
                                 New Admission - Rahul
                               </span>
                               <span className="text-[6px] text-slate-400 shrink-0">10:24 AM</span>
                             </div>
                             <div className="flex items-center justify-between">
                               <span className="flex items-center gap-1 text-slate-700 truncate">
-                                <span className="w-1 h-1 rounded-full bg-amber-500 shrink-0" />
+                                <span className="w-1 h-1 rounded-full bg-[#FF7A00] shrink-0" />
                                 Exam Schedule Live
                               </span>
                               <span className="text-[6px] text-slate-400 shrink-0">09:50 AM</span>
@@ -302,7 +306,7 @@ export default function HeroSection() {
                             </div>
                             <div className="flex items-center justify-between">
                               <span className="flex items-center gap-1 text-slate-700 truncate">
-                                <span className="w-1 h-1 rounded-full bg-blue-600 shrink-0" />
+                                <span className="w-1 h-1 rounded-full bg-orange-500 shrink-0" />
                                 Placement Notice
                               </span>
                               <span className="text-[6px] text-slate-400 shrink-0">09:10 AM</span>
@@ -314,31 +318,31 @@ export default function HeroSection() {
                         <div className="col-span-6 bg-white p-1.5 rounded border border-slate-200/80 shadow-xs flex flex-col justify-between">
                           <div className="flex items-center justify-between pb-0.5 border-b border-slate-100 mb-0.5">
                             <span className="text-[8px] font-bold text-slate-800">Overall Stats</span>
-                            <span className="text-[6.5px] font-semibold text-blue-600">View All</span>
+                            <span className="text-[6.5px] font-semibold text-[#008744]">View All</span>
                           </div>
                           <div className="flex items-end justify-between h-11 pt-0.5 px-0.5 gap-0.5">
                             <div className="flex-1 flex flex-col items-center gap-0.5">
-                              <div className="w-full bg-blue-300 rounded-t-xs h-5" />
+                              <div className="w-full bg-emerald-200 rounded-t-xs h-5" />
                               <span className="text-[5.5px] text-slate-400">Feb</span>
                             </div>
                             <div className="flex-1 flex flex-col items-center gap-0.5">
-                              <div className="w-full bg-blue-400 rounded-t-xs h-7" />
+                              <div className="w-full bg-emerald-300 rounded-t-xs h-7" />
                               <span className="text-[5.5px] text-slate-400">Mar</span>
                             </div>
                             <div className="flex-1 flex flex-col items-center gap-0.5">
-                              <div className="w-full bg-blue-500 rounded-t-xs h-9" />
+                              <div className="w-full bg-emerald-400 rounded-t-xs h-9" />
                               <span className="text-[5.5px] text-slate-400">Apr</span>
                             </div>
                             <div className="flex-1 flex flex-col items-center gap-0.5">
-                              <div className="w-full bg-blue-400 rounded-t-xs h-6" />
+                              <div className="w-full bg-emerald-300 rounded-t-xs h-6" />
                               <span className="text-[5.5px] text-slate-400">May</span>
                             </div>
                             <div className="flex-1 flex flex-col items-center gap-0.5">
-                              <div className="w-full bg-blue-600 rounded-t-xs h-10" />
+                              <div className="w-full bg-[#008744] rounded-t-xs h-10" />
                               <span className="text-[5.5px] text-slate-400">Jun</span>
                             </div>
                             <div className="flex-1 flex flex-col items-center gap-0.5">
-                              <div className="w-full bg-blue-700 rounded-t-xs h-11" />
+                              <div className="w-full bg-[#FF7A00] rounded-t-xs h-11" />
                               <span className="text-[5.5px] text-slate-400">Jul</span>
                             </div>
                           </div>
@@ -363,25 +367,25 @@ export default function HeroSection() {
       {/* Video Demonstration Modal */}
       {showVideoModal && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md animate-in fade-in duration-200">
-          <div className="relative w-full max-w-2xl bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-2xl">
-            <div className="flex items-center justify-between p-3.5 border-b border-slate-800 bg-slate-950">
+          <div className="relative w-full max-w-2xl bg-[#03100A] border border-emerald-900/60 rounded-2xl overflow-hidden shadow-2xl">
+            <div className="flex items-center justify-between p-3.5 border-b border-emerald-900/50 bg-[#020C07]">
               <div className="flex items-center gap-2">
-                <span className="w-2 h-2 rounded-full bg-amber-400" />
+                <span className="w-2 h-2 rounded-full bg-[#FF7A00]" />
                 <h3 className="text-sm font-bold text-white font-['Outfit',sans-serif]">
-                  DigyCampusPro Platform Walkthrough
+                  DigiCampusPro Platform Walkthrough
                 </h3>
               </div>
               <button
                 onClick={() => setShowVideoModal(false)}
-                className="p-1.5 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 transition-colors cursor-pointer"
+                className="p-1.5 rounded-lg text-slate-400 hover:text-white hover:bg-white/10 transition-colors cursor-pointer"
               >
                 <X className="w-5 h-5" />
               </button>
             </div>
 
             <div className="p-6 text-center space-y-4">
-              <div className="aspect-video bg-slate-950 rounded-xl border border-slate-800 flex flex-col items-center justify-center relative overflow-hidden group">
-                <div className="p-4 rounded-full bg-amber-500 text-slate-950 shadow-xl group-hover:scale-110 transition-transform">
+              <div className="aspect-video bg-[#020C07] rounded-xl border border-emerald-900/40 flex flex-col items-center justify-center relative overflow-hidden group">
+                <div className="p-4 rounded-full bg-gradient-to-r from-[#FFA000] to-[#FF6000] text-slate-950 shadow-xl group-hover:scale-110 transition-transform">
                   <Play className="w-7 h-7 fill-slate-950 ml-1" />
                 </div>
                 <p className="mt-3 text-xs font-semibold text-slate-300">
@@ -395,7 +399,7 @@ export default function HeroSection() {
               <div className="flex items-center justify-end gap-3 pt-1">
                 <button
                   onClick={() => setShowVideoModal(false)}
-                  className="px-4 py-2 rounded-xl text-xs font-semibold text-slate-300 hover:text-white bg-slate-800 cursor-pointer"
+                  className="px-4 py-2 rounded-xl text-xs font-semibold text-slate-300 hover:text-white bg-white/10 cursor-pointer"
                 >
                   Close
                 </button>
@@ -406,7 +410,7 @@ export default function HeroSection() {
                     setShowVideoModal(false)
                     scrollToSection('contact')
                   }}
-                  className="px-5 py-2 rounded-xl text-xs font-bold text-slate-950 bg-amber-400 hover:bg-amber-500 cursor-pointer"
+                  className="px-5 py-2 rounded-xl text-xs font-bold text-slate-950 bg-gradient-to-r from-[#FFA000] to-[#FF6000] hover:from-[#FFB000] hover:to-[#FF7000] cursor-pointer"
                 >
                   Schedule Live 1-on-1 Demo
                 </a>

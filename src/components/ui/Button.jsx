@@ -8,10 +8,10 @@ export default function Button({
   const baseStyles = 'inline-flex items-center justify-center font-semibold rounded-xl transition-all duration-200 cursor-pointer active:scale-95 disabled:opacity-50 disabled:pointer-events-none'
   
   const variants = {
-    primary: 'bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white shadow-md shadow-blue-500/20',
-    secondary: 'bg-white text-slate-700 border border-slate-200 hover:bg-slate-50 hover:border-slate-300 shadow-sm',
-    accent: 'bg-amber-500 hover:bg-amber-600 text-slate-950 shadow-md shadow-amber-500/20',
-    ghost: 'text-slate-600 hover:text-slate-900 hover:bg-slate-100'
+    primary: 'bg-gradient-to-r from-[#008744] to-[#00A651] hover:from-[#007338] hover:to-[#008744] text-white shadow-md shadow-emerald-600/25',
+    secondary: 'bg-white text-slate-700 border border-slate-200 hover:bg-emerald-50/50 hover:border-emerald-300 shadow-sm',
+    accent: 'bg-gradient-to-r from-[#FFA000] via-[#FF8000] to-[#FF6000] hover:from-[#FFB020] hover:to-[#E65C00] text-white shadow-md shadow-orange-500/25',
+    ghost: 'text-slate-600 hover:text-[#008744] hover:bg-emerald-50'
   }
 
   const sizes = {

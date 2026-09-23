@@ -46,15 +46,15 @@ export default function WhoCanUse() {
   ]
 
   return (
-    <section className="relative bg-gradient-to-b from-[#F3F6FA] via-white to-[#F0F4F8] py-16 sm:py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+    <section className="relative bg-gradient-to-b from-[#F0FDF4] via-white to-[#E8F5EE] py-16 sm:py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
       <div className="max-w-7xl mx-auto text-center">
         {/* Top Pill Badge */}
-        <div className="inline-flex items-center gap-1.5 px-4 py-1 rounded-full text-xs font-semibold tracking-wider text-slate-950 bg-gradient-to-r from-amber-400 via-amber-500 to-amber-400 shadow-sm mb-3">
+        <div className="inline-flex items-center gap-1.5 px-4 py-1 rounded-full text-xs font-semibold tracking-wider text-slate-950 bg-gradient-to-r from-amber-400 via-orange-500 to-orange-600 shadow-sm mb-3">
           WHO CAN USE
         </div>
 
         {/* Section Heading */}
-        <h2 className="text-3xl sm:text-4xl lg:text-[40px] font-bold text-[#0B132B] tracking-tight mb-12 font-['Outfit',sans-serif]">
+        <h2 className="text-3xl sm:text-4xl lg:text-[40px] font-bold text-[#04140D] tracking-tight mb-12 font-['Outfit',sans-serif]">
           Designed for Everyone in the Education Ecosystem
         </h2>
 
@@ -64,10 +64,10 @@ export default function WhoCanUse() {
             <a
               key={role.id}
               href={role.url}
-              className="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-slate-200/80 flex flex-col justify-between cursor-pointer"
+              className="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-emerald-100/90 hover:border-emerald-300 flex flex-col justify-between cursor-pointer"
             >
               {/* Upper Section: Character / Role Image */}
-              <div className="h-48 sm:h-52 w-full overflow-hidden bg-gradient-to-b from-sky-50 via-slate-50 to-blue-50 relative flex items-center justify-center">
+              <div className="h-48 sm:h-52 w-full overflow-hidden bg-gradient-to-b from-emerald-50/40 via-slate-50 to-orange-50/20 relative flex items-center justify-center">
                 <img
                   src={role.image}
                   alt={role.title}
@@ -76,11 +76,11 @@ export default function WhoCanUse() {
                 />
               </div>
 
-              {/* Lower Section: Deep Navy Card Content */}
-              <div className="bg-[#061A40] bg-gradient-to-b from-[#082252] to-[#04102C] p-4 sm:p-5 relative text-left flex flex-col justify-between min-h-[110px]">
-                {/* Circular Golden Badge overlapping image */}
-                <div className="w-10 h-10 -mt-9 sm:-mt-10 mb-2 rounded-full bg-gradient-to-tr from-amber-500 via-amber-400 to-yellow-300 p-0.5 shadow-lg flex items-center justify-center shrink-0 border-2 border-[#061A40]">
-                  <div className="w-full h-full rounded-full bg-amber-400 flex items-center justify-center">
+              {/* Lower Section: Deep Forest Card Content */}
+              <div className="bg-[#05140D] bg-gradient-to-b from-[#061C12] to-[#030E08] p-4 sm:p-5 relative text-left flex flex-col justify-between min-h-[110px]">
+                {/* Circular Orange Badge overlapping image */}
+                <div className="w-10 h-10 -mt-9 sm:-mt-10 mb-2 rounded-full bg-gradient-to-tr from-[#FFA000] via-[#FF8000] to-[#FF6000] p-0.5 shadow-lg flex items-center justify-center shrink-0 border-2 border-[#061C12]">
+                  <div className="w-full h-full rounded-full bg-gradient-to-r from-[#FFA000] to-[#FF6000] flex items-center justify-center">
                     {role.icon}
                   </div>
                 </div>
@@ -88,7 +88,7 @@ export default function WhoCanUse() {
                 {/* Title, Subtitle and Arrow Button */}
                 <div className="flex items-end justify-between gap-2 mt-auto">
                   <div>
-                    <h3 className="text-white font-semibold text-base sm:text-[15px] font-['Outfit',sans-serif] tracking-tight group-hover:text-amber-400 transition-colors">
+                    <h3 className="text-white font-semibold text-base sm:text-[15px] font-['Outfit',sans-serif] tracking-tight group-hover:text-[#FFA000] transition-colors">
                       {role.title}
                     </h3>
                     <p className="text-slate-300/85 text-[11px] sm:text-xs mt-0.5 leading-snug">
@@ -97,7 +97,7 @@ export default function WhoCanUse() {
                   </div>
 
                   {/* Circular Arrow Button */}
-                  <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-blue-500/20 border border-blue-400/30 flex items-center justify-center text-blue-200 group-hover:bg-blue-600 group-hover:text-white group-hover:border-blue-600 transition-all shrink-0">
+                  <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-emerald-500/20 border border-emerald-400/30 flex items-center justify-center text-emerald-300 group-hover:bg-[#008744] group-hover:text-white group-hover:border-[#008744] transition-all shrink-0">
                     <ArrowRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 group-hover:translate-x-0.5 transition-transform" />
                   </div>
                 </div>

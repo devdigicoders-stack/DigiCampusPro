@@ -8,13 +8,13 @@ export default function Portals() {
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {PORTAL_LINKS.map((portal) => (
-          <div key={portal.id} className="p-6 bg-white rounded-2xl border border-slate-200 shadow-sm">
-            <span className="text-xs font-bold text-blue-600 uppercase tracking-wider">{portal.badge}</span>
+          <div key={portal.id} className="p-6 bg-white rounded-2xl border border-slate-200 hover:border-emerald-300 hover:shadow-md transition-all shadow-sm">
+            <span className="text-xs font-bold text-[#008744] uppercase tracking-wider">{portal.badge}</span>
             <h3 className="text-xl font-bold text-slate-900 mt-1">{portal.title}</h3>
             <p className="text-sm text-slate-600 mt-2">{portal.description}</p>
             <a
               href={portal.url}
-              className="inline-block mt-4 text-sm font-semibold text-blue-600 hover:text-blue-700"
+              className="inline-block mt-4 text-sm font-semibold text-[#008744] hover:text-[#007338] transition-colors"
             >
               Open Gateway →
             </a>

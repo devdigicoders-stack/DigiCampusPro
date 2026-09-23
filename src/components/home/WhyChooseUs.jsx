@@ -7,7 +7,7 @@ export default function WhyChooseUs() {
       // Multi-layered hexagonal / emblem icon
       icon: (
         <svg
-          className="w-8 h-8 sm:w-9 sm:h-9 text-[#FBBF24] shrink-0 filter drop-shadow-[0_2px_8px_rgba(245,158,11,0.4)]"
+          className="w-8 h-8 sm:w-9 sm:h-9 text-[#FF7A00] shrink-0 filter drop-shadow-[0_2px_8px_rgba(255,122,0,0.4)]"
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
@@ -29,7 +29,7 @@ export default function WhyChooseUs() {
       // Interactive user nodes / intuitive touch icon
       icon: (
         <svg
-          className="w-8 h-8 sm:w-9 sm:h-9 text-[#FBBF24] shrink-0 filter drop-shadow-[0_2px_8px_rgba(245,158,11,0.4)]"
+          className="w-8 h-8 sm:w-9 sm:h-9 text-[#FF7A00] shrink-0 filter drop-shadow-[0_2px_8px_rgba(255,122,0,0.4)]"
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
@@ -56,7 +56,7 @@ export default function WhyChooseUs() {
       // Shield with security bolt icon
       icon: (
         <svg
-          className="w-8 h-8 sm:w-9 sm:h-9 text-[#FBBF24] shrink-0 filter drop-shadow-[0_2px_8px_rgba(245,158,11,0.4)]"
+          className="w-8 h-8 sm:w-9 sm:h-9 text-[#FF7A00] shrink-0 filter drop-shadow-[0_2px_8px_rgba(255,122,0,0.4)]"
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
@@ -77,7 +77,7 @@ export default function WhyChooseUs() {
       // Growth bar chart with upward trending graph icon
       icon: (
         <svg
-          className="w-8 h-8 sm:w-9 sm:h-9 text-[#FBBF24] shrink-0 filter drop-shadow-[0_2px_8px_rgba(245,158,11,0.4)]"
+          className="w-8 h-8 sm:w-9 sm:h-9 text-[#FF7A00] shrink-0 filter drop-shadow-[0_2px_8px_rgba(255,122,0,0.4)]"
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
@@ -101,7 +101,7 @@ export default function WhyChooseUs() {
       // 24/7 Support ring / lifebuoy icon
       icon: (
         <svg
-          className="w-8 h-8 sm:w-9 sm:h-9 text-[#FBBF24] shrink-0 filter drop-shadow-[0_2px_8px_rgba(245,158,11,0.4)]"
+          className="w-8 h-8 sm:w-9 sm:h-9 text-[#FF7A00] shrink-0 filter drop-shadow-[0_2px_8px_rgba(255,122,0,0.4)]"
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
@@ -121,9 +121,9 @@ export default function WhyChooseUs() {
   ]
 
   return (
-    <section id="why-us" className="relative bg-[#020716] py-16 sm:py-20 px-4 sm:px-6 lg:px-8 overflow-hidden scroll-mt-20">
+    <section id="why-us" className="relative bg-[#020C07] py-16 sm:py-20 px-4 sm:px-6 lg:px-8 overflow-hidden scroll-mt-20">
       {/* Background ambient lighting and subtle texture */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[350px] bg-blue-600/10 blur-[140px] rounded-full pointer-events-none -z-10" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[350px] bg-emerald-600/15 blur-[140px] rounded-full pointer-events-none -z-10" />
 
       <div className="max-w-7xl mx-auto relative">
         {/* Handwritten script & curved chalk arrow in top right */}
@@ -149,8 +149,8 @@ export default function WhyChooseUs() {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-14">
           {/* Top Pill Badge */}
-          <div className="inline-flex items-center gap-1.5 px-5 py-1.5 rounded-full text-xs font-semibold tracking-wider text-slate-950 bg-gradient-to-r from-amber-400 via-amber-500 to-amber-400 shadow-sm mb-4">
-            WHY CHOOSE DIGYCAMPUSPRO
+          <div className="inline-flex items-center gap-1.5 px-5 py-1.5 rounded-full text-xs font-semibold tracking-wider text-slate-950 bg-gradient-to-r from-amber-400 via-orange-500 to-orange-600 shadow-sm mb-4">
+            WHY CHOOSE DIGICAMPUSPRO
           </div>
 
           {/* Main Heading */}
@@ -169,16 +169,16 @@ export default function WhyChooseUs() {
           {cards.map((card) => (
             <div
               key={card.id}
-              className="bg-gradient-to-b from-[#05173B]/95 via-[#071E4B]/90 to-[#030E26]/95 border border-blue-500/30 hover:border-blue-400/80 rounded-2xl p-4 sm:p-5 flex items-center gap-3.5 sm:gap-4 text-left transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_10px_30px_rgba(20,70,180,0.35)] group cursor-default"
+              className="bg-gradient-to-b from-[#041910]/95 via-[#062417]/90 to-[#020E08]/95 border border-emerald-500/30 hover:border-emerald-400/80 rounded-2xl p-4 sm:p-5 flex items-center gap-3.5 sm:gap-4 text-left transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_10px_30px_rgba(0,135,68,0.25)] group cursor-default"
             >
-              {/* Golden Icon Container */}
-              <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-amber-400/10 border border-amber-400/25 flex items-center justify-center shrink-0 shadow-[0_0_15px_rgba(245,158,11,0.15)] group-hover:scale-110 group-hover:border-amber-400/50 group-hover:bg-amber-400/15 transition-all duration-300">
+              {/* Orange Icon Container */}
+              <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-orange-500/10 border border-orange-500/25 flex items-center justify-center shrink-0 shadow-[0_0_15px_rgba(255,122,0,0.15)] group-hover:scale-110 group-hover:border-orange-500/50 group-hover:bg-orange-500/15 transition-all duration-300">
                 {card.icon}
               </div>
 
               {/* Text Info */}
               <div>
-                <h3 className="text-xs sm:text-sm lg:text-[14px] font-semibold text-white tracking-tight leading-snug font-['Outfit',sans-serif] group-hover:text-amber-300 transition-colors">
+                <h3 className="text-xs sm:text-sm lg:text-[14px] font-semibold text-white tracking-tight leading-snug font-['Outfit',sans-serif] group-hover:text-[#FFA000] transition-colors">
                   {card.title}
                 </h3>
                 <p className="text-[10px] sm:text-[11px] text-slate-300/80 mt-0.5 leading-snug">

@@ -19,7 +19,7 @@ export default function Footer() {
   }
 
   return (
-    <footer className="bg-gradient-to-b from-[#F8FAFD] via-white to-[#F0F5FA] text-slate-600 pt-16 pb-10 border-t border-slate-200/80 text-sm">
+    <footer className="bg-gradient-to-b from-[#F0FDF4] via-white to-[#E8F5EE] text-slate-600 pt-16 pb-10 border-t border-emerald-200/80 text-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main 5-Column Footer Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-8 pb-12">
@@ -28,25 +28,25 @@ export default function Footer() {
             {/* Brand Logo */}
             <Link to="/" className="inline-block transition-transform hover:scale-105">
               <img
-                src="/ERPLogo.png"
+                src="/DigiCampus Logo.png"
                 alt="DigiCampusPro Logo"
-                className="h-14 sm:h-15 w-auto object-contain"
+                className="h-12 sm:h-14 w-auto object-contain"
               />
             </Link>
 
             {/* Description */}
-            <p className="text-xs sm:text-[13px] text-slate-500 leading-relaxed max-w-sm">
+            <p className="text-xs sm:text-[13px] text-slate-600 leading-relaxed max-w-sm">
               A complete ERP solution for Polytechnics, Colleges and Educational Institutes.
             </p>
 
-            {/* Social Media Buttons (4 Blue Circular Buttons matching reference) */}
+            {/* Social Media Buttons (4 Emerald Circular Buttons) */}
             <div className="flex items-center gap-2.5 pt-1">
               {/* Facebook */}
               <a
                 href="https://facebook.com"
                 target="_blank"
                 rel="noreferrer"
-                className="w-8 h-8 rounded-full bg-[#1E4ED8] hover:bg-blue-700 text-white flex items-center justify-center shadow-xs transition-transform hover:scale-110"
+                className="w-8 h-8 rounded-full bg-[#008744] hover:bg-[#007338] text-white flex items-center justify-center shadow-xs transition-transform hover:scale-110"
                 aria-label="Facebook"
               >
                 <svg className="w-4 h-4 fill-white" viewBox="0 0 24 24">
@@ -59,7 +59,7 @@ export default function Footer() {
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noreferrer"
-                className="w-8 h-8 rounded-full bg-[#1E4ED8] hover:bg-blue-700 text-white flex items-center justify-center shadow-xs transition-transform hover:scale-110"
+                className="w-8 h-8 rounded-full bg-[#008744] hover:bg-[#007338] text-white flex items-center justify-center shadow-xs transition-transform hover:scale-110"
                 aria-label="LinkedIn"
               >
                 <svg className="w-3.5 h-3.5 fill-white" viewBox="0 0 24 24">
@@ -72,7 +72,7 @@ export default function Footer() {
                 href="https://twitter.com"
                 target="_blank"
                 rel="noreferrer"
-                className="w-8 h-8 rounded-full bg-[#1E4ED8] hover:bg-blue-700 text-white flex items-center justify-center shadow-xs transition-transform hover:scale-110"
+                className="w-8 h-8 rounded-full bg-[#008744] hover:bg-[#007338] text-white flex items-center justify-center shadow-xs transition-transform hover:scale-110"
                 aria-label="Twitter"
               >
                 <svg className="w-3.5 h-3.5 fill-white" viewBox="0 0 24 24">
@@ -85,7 +85,7 @@ export default function Footer() {
                 href="https://instagram.com"
                 target="_blank"
                 rel="noreferrer"
-                className="w-8 h-8 rounded-full bg-[#1E4ED8] hover:bg-blue-700 text-white flex items-center justify-center shadow-xs transition-transform hover:scale-110"
+                className="w-8 h-8 rounded-full bg-[#008744] hover:bg-[#007338] text-white flex items-center justify-center shadow-xs transition-transform hover:scale-110"
                 aria-label="Instagram"
               >
                 <svg className="w-4 h-4 fill-white" viewBox="0 0 24 24">
@@ -100,21 +100,21 @@ export default function Footer() {
             <h4 className="text-slate-900 font-bold text-sm sm:text-base font-['Outfit',sans-serif] mb-3.5">
               Quick Links
             </h4>
-            <ul className="space-y-2.5 text-xs sm:text-[13px] text-slate-500 font-medium">
+            <ul className="space-y-2.5 text-xs sm:text-[13px] text-slate-600 font-medium">
               <li>
-                <a href="#home" className="hover:text-blue-600 transition-colors">Home</a>
+                <a href="#home" className="hover:text-[#008744] transition-colors">Home</a>
               </li>
               <li>
-                <a href="#features" className="hover:text-blue-600 transition-colors">Features</a>
+                <a href="#features" className="hover:text-[#008744] transition-colors">Features</a>
               </li>
               <li>
-                <a href="#modules" className="hover:text-blue-600 transition-colors">Modules</a>
+                <a href="#modules" className="hover:text-[#008744] transition-colors">Modules</a>
               </li>
               <li>
-                <a href="#pricing" className="hover:text-blue-600 transition-colors">Pricing</a>
+                <a href="#pricing" className="hover:text-[#008744] transition-colors">Pricing</a>
               </li>
               <li>
-                <a href="#contact" className="hover:text-blue-600 transition-colors">Contact</a>
+                <a href="#contact" className="hover:text-[#008744] transition-colors">Contact</a>
               </li>
             </ul>
           </div>
@@ -124,24 +124,24 @@ export default function Footer() {
             <h4 className="text-slate-900 font-bold text-sm sm:text-base font-['Outfit',sans-serif] mb-3.5">
               Modules
             </h4>
-            <ul className="space-y-2.5 text-xs sm:text-[13px] text-slate-500 font-medium">
+            <ul className="space-y-2.5 text-xs sm:text-[13px] text-slate-600 font-medium">
               <li>
-                <a href="#features" className="hover:text-blue-600 transition-colors">Academics</a>
+                <a href="#features" className="hover:text-[#008744] transition-colors">Academics</a>
               </li>
               <li>
-                <a href="#features" className="hover:text-blue-600 transition-colors">Examination</a>
+                <a href="#features" className="hover:text-[#008744] transition-colors">Examination</a>
               </li>
               <li>
-                <a href="#features" className="hover:text-blue-600 transition-colors">Student Management</a>
+                <a href="#features" className="hover:text-[#008744] transition-colors">Student Management</a>
               </li>
               <li>
-                <a href="#features" className="hover:text-blue-600 transition-colors">Fee Management</a>
+                <a href="#features" className="hover:text-[#008744] transition-colors">Fee Management</a>
               </li>
               <li>
-                <a href="#features" className="hover:text-blue-600 transition-colors">Placement</a>
+                <a href="#features" className="hover:text-[#008744] transition-colors">Placement</a>
               </li>
               <li>
-                <a href="#features" className="hover:text-blue-600 transition-colors">Library</a>
+                <a href="#features" className="hover:text-[#008744] transition-colors">Library</a>
               </li>
             </ul>
           </div>
@@ -151,21 +151,21 @@ export default function Footer() {
             <h4 className="text-slate-900 font-bold text-sm sm:text-base font-['Outfit',sans-serif] mb-3.5">
               Support
             </h4>
-            <ul className="space-y-2.5 text-xs sm:text-[13px] text-slate-500 font-medium">
+            <ul className="space-y-2.5 text-xs sm:text-[13px] text-slate-600 font-medium">
               <li>
-                <a href="#contact" className="hover:text-blue-600 transition-colors">Help Center</a>
+                <a href="#contact" className="hover:text-[#008744] transition-colors">Help Center</a>
               </li>
               <li>
-                <a href="#contact" className="hover:text-blue-600 transition-colors">Documentation</a>
+                <a href="#contact" className="hover:text-[#008744] transition-colors">Documentation</a>
               </li>
               <li>
-                <Link to="/privacy-policy" className="hover:text-blue-600 transition-colors">Privacy Policy</Link>
+                <Link to="/privacy-policy" className="hover:text-[#008744] transition-colors">Privacy Policy</Link>
               </li>
               <li>
-                <Link to="/terms-conditions" className="hover:text-blue-600 transition-colors">Terms & Conditions</Link>
+                <Link to="/terms-conditions" className="hover:text-[#008744] transition-colors">Terms & Conditions</Link>
               </li>
               <li>
-                <a href="#contact" className="hover:text-blue-600 transition-colors">Contact Support</a>
+                <a href="#contact" className="hover:text-[#008744] transition-colors">Contact Support</a>
               </li>
             </ul>
           </div>
@@ -181,12 +181,12 @@ export default function Footer() {
 
             {/* Newsletter Subscription Form */}
             {subscribed ? (
-              <div className="p-2.5 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-700 text-xs font-semibold flex items-center gap-1.5">
+              <div className="p-2.5 rounded-xl bg-emerald-50 border border-emerald-200 text-[#008744] text-xs font-semibold flex items-center gap-1.5">
                 <Check className="w-4 h-4 shrink-0" />
                 <span>Thank you for subscribing!</span>
               </div>
             ) : (
-              <form onSubmit={handleSubscribe} className="flex items-center rounded-xl overflow-hidden border border-blue-400/90 bg-white shadow-xs focus-within:ring-2 focus-within:ring-blue-500">
+              <form onSubmit={handleSubscribe} className="flex items-center rounded-xl overflow-hidden border border-emerald-400/80 bg-white shadow-xs focus-within:ring-2 focus-within:ring-[#008744]">
                 <input
                   type="email"
                   required
@@ -197,7 +197,7 @@ export default function Footer() {
                 />
                 <button
                   type="submit"
-                  className="bg-[#1E4ED8] hover:bg-blue-700 text-white px-3 py-2 flex items-center justify-center transition-colors cursor-pointer shrink-0"
+                  className="bg-[#008744] hover:bg-[#007338] text-white px-3 py-2 flex items-center justify-center transition-colors cursor-pointer shrink-0"
                   aria-label="Subscribe"
                 >
                   <Send className="w-3.5 h-3.5 rotate-45" />
@@ -208,12 +208,12 @@ export default function Footer() {
         </div>
 
         {/* Bottom Copyright & Love Note Row */}
-        <div className="pt-6 border-t border-slate-200/80 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-3">
-          <p>© {new Date().getFullYear()} <span className="font-bold text-slate-800">DigyCampusPro</span>. All rights reserved.</p>
+        <div className="pt-6 border-t border-emerald-200/80 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-3">
+          <p>© {new Date().getFullYear()} <span className="font-bold text-slate-800">DigiCampusPro</span>. All rights reserved.</p>
           <p className="flex items-center gap-1.5 font-medium">
             <span>Crafted with</span>
             <Heart className="w-3.5 h-3.5 text-rose-500 fill-rose-500" />
-            <span>by <a href="https://digicoders.in/" target="_blank" rel="noopener noreferrer" className="text-slate-800 hover:text-slate-900 hover:underline hover:decoration-blue-500 hover:decoration-w text-blue-600 font-bold cursor-pointer">Team Digicoders</a></span>
+            <span>by <a href="https://digicoders.in/" target="_blank" rel="noopener noreferrer" className="text-slate-800 hover:text-slate-900 hover:underline hover:decoration-[#008744] text-[#008744] font-bold cursor-pointer">Team Digicoders</a></span>
           </p>
         </div>
       </div>

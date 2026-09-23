@@ -100,36 +100,36 @@ Any legal dispute, controversy, or claim arising out of or relating to this agre
   ]
 
   return (
-    <div className="bg-[#020716] min-h-screen text-slate-200">
+    <div className="bg-[#020C07] min-h-screen text-slate-200">
       {/* Top Header Banner */}
-      <section className="relative bg-[#040E24] bg-gradient-to-r from-[#020817] via-[#07193D] to-[#030C22] border-b border-blue-950/80 py-16 sm:py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+      <section className="relative bg-[#030F0A] bg-gradient-to-r from-[#020C07] via-[#04160E] to-[#020C07] border-b border-emerald-950/80 py-16 sm:py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
         <div className="absolute inset-0 pointer-events-none opacity-20">
-          <div className="absolute -top-12 -right-12 w-96 h-96 bg-blue-600/20 rounded-full blur-3xl" />
-          <div className="absolute top-0 right-0 w-full h-full bg-[radial-gradient(#1E4ED8_1px,transparent_1px)] [background-size:24px_24px] opacity-25" />
+          <div className="absolute -top-12 -right-12 w-96 h-96 bg-[#008744]/20 rounded-full blur-3xl" />
+          <div className="absolute top-0 right-0 w-full h-full bg-[radial-gradient(#008744_1px,transparent_1px)] [background-size:24px_24px] opacity-25" />
         </div>
 
         <div className="max-w-5xl mx-auto relative z-10 text-center">
           {/* Breadcrumb Navigation */}
           <div className="flex items-center justify-center gap-2 text-xs font-medium text-slate-400 mb-4">
-            <Link to="/" className="hover:text-amber-400 transition-colors flex items-center gap-1">
+            <Link to="/" className="hover:text-[#FFA000] transition-colors flex items-center gap-1">
               <ArrowLeft className="w-3.5 h-3.5" />
               <span>Back to Home</span>
             </Link>
             <span>/</span>
-            <span className="text-amber-400 font-semibold">Terms & Conditions</span>
+            <span className="text-[#FFA000] font-semibold">Terms & Conditions</span>
           </div>
 
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider text-amber-300 bg-amber-400/10 border border-amber-400/30 backdrop-blur-md shadow-sm mb-4">
-            <Scale className="w-4 h-4 text-amber-400" />
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider text-white bg-gradient-to-r from-[#FFA000] via-[#FF8000] to-[#FF6000] border border-orange-500/30 backdrop-blur-md shadow-md shadow-orange-500/20 mb-4">
+            <Scale className="w-4 h-4 text-white" />
             <span>INSTITUTIONAL SERVICE AGREEMENT & SLA</span>
           </div>
 
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white tracking-tight font-['Outfit',sans-serif] mb-4">
-            DigiCampusPro <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-amber-300 to-yellow-500">Terms & Conditions</span>
+            DigiCampusPro <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FFA000] via-[#FFB347] to-[#FF7A00]">Terms & Conditions</span>
           </h1>
 
-          <p className="text-slate-300 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed font-normal">
+          <p className="text-emerald-100/80 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed font-normal">
             Transparent institutional terms, uptime commitments, data portability rights, and service guidelines governing our academic ERP platform.
           </p>
 
@@ -140,7 +140,7 @@ Any legal dispute, controversy, or claim arising out of or relating to this agre
             </span>
             <span className="hidden sm:inline text-slate-600">•</span>
             <span className="flex items-center gap-1.5">
-              <Clock className="w-3.5 h-3.5 text-blue-400" />
+              <Clock className="w-3.5 h-3.5 text-[#0077D4]" />
               24/7 Crisis Escalation
             </span>
             <span className="hidden sm:inline text-slate-600">•</span>
@@ -153,10 +153,10 @@ Any legal dispute, controversy, or claim arising out of or relating to this agre
       <section className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
         <div className="bg-white rounded-3xl p-6 sm:p-10 lg:p-12 shadow-2xl border border-slate-200 text-slate-800 space-y-10 text-left">
           {/* Executive Overview Box */}
-          <div className="p-4 sm:p-5 rounded-2xl bg-amber-50/80 border border-amber-200/80 flex items-start gap-3.5 text-xs sm:text-sm text-amber-950 leading-relaxed font-normal">
-            <FileCheck2 className="w-5 h-5 text-amber-600 shrink-0 mt-0.5" />
+          <div className="p-4 sm:p-5 rounded-2xl bg-orange-50/80 border border-orange-200/80 flex items-start gap-3.5 text-xs sm:text-sm text-orange-950 leading-relaxed font-normal">
+            <FileCheck2 className="w-5 h-5 text-[#FF7A00] shrink-0 mt-0.5" />
             <div>
-              <strong className="font-semibold text-amber-950">Summary for Institutional Leaders:</strong> DigiCampusPro provides cloud ERP access under clear service level agreements. Colleges retain complete data sovereignty, receive guaranteed 99.9% uptime, and benefit from a full data export policy upon subscription completion.
+              <strong className="font-semibold text-orange-950">Summary for Institutional Leaders:</strong> DigiCampusPro provides cloud ERP access under clear service level agreements. Colleges retain complete data sovereignty, receive guaranteed 99.9% uptime, and benefit from a full data export policy upon subscription completion.
             </div>
           </div>
 
@@ -176,12 +176,12 @@ Any legal dispute, controversy, or claim arising out of or relating to this agre
 
           {/* Bottom Legal Contact Card */}
           <div className="pt-8 border-t border-slate-200">
-            <div className="bg-gradient-to-br from-[#07193D] to-[#040D26] text-white p-6 sm:p-8 rounded-2xl flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 shadow-xl">
+            <div className="bg-gradient-to-br from-[#061C12] to-[#030E08] border border-emerald-900/50 text-white p-6 sm:p-8 rounded-2xl flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 shadow-xl">
               <div>
                 <h3 className="text-lg font-bold font-['Outfit',sans-serif] text-white">
                   Need an Institutional Enterprise SLA?
                 </h3>
-                <p className="text-xs text-slate-300 mt-1 max-w-md font-normal">
+                <p className="text-xs text-emerald-200/80 mt-1 max-w-md font-normal">
                   Our institutional sales and legal team can provide custom SLA annexures for large multi-campus universities and autonomous trusts.
                 </p>
               </div>
@@ -189,15 +189,15 @@ Any legal dispute, controversy, or claim arising out of or relating to this agre
               <div className="flex flex-wrap gap-3">
                 <a
                   href="mailto:legal@digicampuspro.com"
-                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-semibold text-slate-950 bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-500 hover:to-amber-600 transition-all shadow-md cursor-pointer"
+                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-semibold text-white bg-gradient-to-r from-[#FFA000] to-[#FF6000] hover:from-[#FFB020] hover:to-[#E65C00] transition-all shadow-md shadow-orange-500/20 cursor-pointer"
                 >
-                  <Mail className="w-3.5 h-3.5 text-slate-950" />
+                  <Mail className="w-3.5 h-3.5 text-white" />
                   <span>Contact Legal Desk</span>
                 </a>
 
                 <Link
                   to="/#contact"
-                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-semibold text-white border border-blue-400/40 hover:bg-white/10 transition-all cursor-pointer"
+                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-semibold text-white border border-emerald-500/40 bg-white/5 hover:bg-emerald-900/40 transition-all cursor-pointer"
                 >
                   <span>Talk to Sales</span>
                 </Link>
