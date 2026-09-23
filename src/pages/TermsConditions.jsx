@@ -95,7 +95,7 @@ Any legal dispute, controversy, or claim arising out of or relating to this agre
 • Corporate Entity: Digicoders Technologies Private Limited
 • Office: 2nd Floor, B-36, Sector O, Near Ram Ram Bank Chauraha, Aliganj, Lucknow, Uttar Pradesh - 226021, India
 • Legal Email: legal@digicampuspro.com / info@digicampuspro.com
-• Phone Helpline: +91 9140967607`
+• Phone Helpline: +91 9198483820`
     }
   ]
 

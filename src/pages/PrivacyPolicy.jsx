@@ -87,7 +87,7 @@ Upon written request or termination of the service agreement, DigiCampusPro guar
 • Organization: Digicoders Technologies Private Limited
 • Office: 2nd Floor, B-36, Sector O, Near Ram Ram Bank Chauraha, Aliganj, Lucknow, Uttar Pradesh - 226021, India
 • Direct Email: privacy@digicampuspro.com / info@digicampuspro.com
-• Phone Helpline: +91 9140967607 (Mon – Sat, 9:00 AM – 7:00 PM IST)`
+• Phone Helpline: +91 9198483820 (Mon – Sat, 9:00 AM – 7:00 PM IST)`
     }
   ]
 

@@ -4,7 +4,6 @@ export const NAV_LINKS = [
   { name: 'Features', href: '#features', targetId: 'features' },
   { name: 'Modules', href: '#modules', targetId: 'modules' },
   { name: 'Why Us', href: '#why-us', targetId: 'why-us' },
-  { name: 'Pricing', href: '#pricing', targetId: 'pricing' },
   { name: 'Contact', href: '#contact', targetId: 'contact' }
 ]
 

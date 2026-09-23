@@ -2,6 +2,7 @@ import { BrowserRouter } from 'react-router-dom'
 import { AppProvider } from './context/AppContext'
 import AppRoutes from './routes/AppRoutes'
 import ScrollToTop from './components/common/ScrollToTop'
+import DemoCredentialsModal from './components/common/DemoCredentialsModal'
 
 export default function App() {
   return (
@@ -9,6 +10,7 @@ export default function App() {
       <BrowserRouter>
         <ScrollToTop />
         <AppRoutes />
+        <DemoCredentialsModal />
       </BrowserRouter>
     </AppProvider>
   )

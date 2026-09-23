@@ -6,7 +6,6 @@ import WhyChooseUs from '../components/home/WhyChooseUs'
 import HowItWorks from '../components/home/HowItWorks'
 import SystemPreview from '../components/home/SystemPreview'
 import Testimonials from '../components/home/Testimonials'
-import PricingSection from '../components/home/PricingSection'
 import FaqSection from '../components/home/FaqSection'
 import CtaBanner from '../components/home/CtaBanner'
 import ContactSection from '../components/home/ContactSection'
@@ -22,7 +21,6 @@ export default function Home() {
       <HowItWorks />
       <SystemPreview />
       <Testimonials />
-      <PricingSection />
       <FaqSection />
       <CtaBanner />
       <ContactSection />

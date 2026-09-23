@@ -4,7 +4,6 @@ import Home from '../pages/Home'
 import Features from '../pages/Features'
 import Modules from '../pages/Modules'
 import WhyUs from '../pages/WhyUs'
-import Pricing from '../pages/Pricing'
 import Portals from '../pages/Portals'
 import About from '../pages/About'
 import Contact from '../pages/Contact'
@@ -20,7 +19,6 @@ export default function AppRoutes() {
         <Route path="features" element={<Features />} />
         <Route path="modules" element={<Modules />} />
         <Route path="why-us" element={<WhyUs />} />
-        <Route path="pricing" element={<Pricing />} />
         <Route path="portals" element={<Portals />} />
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />

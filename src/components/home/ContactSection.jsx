@@ -30,6 +30,7 @@ export default function ContactSection() {
 
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
+  const [errorMessage, setErrorMessage] = useState('')
 
   const modulesList = [
     'Student Lifecycle',
@@ -54,15 +55,36 @@ export default function ContactSection() {
     })
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
     setIsSubmitting(true)
+    setErrorMessage('')
 
-    // Simulate reliable API request
-    setTimeout(() => {
-      setIsSubmitting(false)
+    try {
+      const baseUrl = (typeof window !== 'undefined' && (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'))
+        ? 'http://localhost:5003/api'
+        : (import.meta.env.VITE_API_URL || 'https://collegeerp.thedigicoders.com/api')
+
+      const response = await fetch(`${baseUrl}/enquiries`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      })
+
+      const data = await response.json()
+      if (!response.ok || !data.success) {
+        throw new Error(data.message || 'Failed to submit enquiry. Please try again.')
+      }
+
       setIsSubmitted(true)
-    }, 1200)
+    } catch (err) {
+      console.error('Enquiry submission error:', err)
+      setErrorMessage(err.message || 'Unable to submit enquiry. Please try again or reach out on WhatsApp.')
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   const handleReset = () => {
@@ -76,6 +98,7 @@ export default function ContactSection() {
       selectedModules: ['Student Lifecycle', 'Fee & Finance'],
       message: ''
     })
+    setErrorMessage('')
     setIsSubmitted(false)
   }
 
@@ -128,7 +151,7 @@ export default function ContactSection() {
               <div className="space-y-5 text-left">
                 {/* Phone */}
                 <a
-                  href="tel:+919140967607"
+                  href="tel:+91 9198483820"
                   className="flex items-start gap-4 p-3.5 rounded-2xl bg-white/[0.03] hover:bg-white/[0.07] border border-white/5 transition-all group cursor-pointer"
                 >
                   <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-[#FFA000] to-[#FF6000] flex items-center justify-center text-white shrink-0 shadow-md group-hover:scale-105 transition-transform">
@@ -137,7 +160,7 @@ export default function ContactSection() {
                   <div>
                     <div className="text-xs text-slate-400 font-normal">Direct Call / Helpline</div>
                     <div className="text-sm sm:text-base font-semibold text-white group-hover:text-[#FFA000] transition-colors">
-                      +91 9140967607
+                      +91 9198483820
                     </div>
                     <div className="text-[11px] text-emerald-300/80 font-normal">Mon – Sat, 9:00 AM – 7:00 PM IST</div>
                   </div>
@@ -180,7 +203,7 @@ export default function ContactSection() {
               {/* Instant WhatsApp Action Button */}
               <div className="mt-6 pt-5 border-t border-emerald-900/40">
                 <a
-                  href="https://wa.me/919140967607?text=Hello%20DigiCampusPro%20Team,%20I%20would%20like%20to%20schedule%20a%20demo%20for%20our%20college."
+                  href="https://wa.me/9198483820?text=Hello%20DigiCampusPro%20Team,%20I%20would%20like%20to%20schedule%20a%20demo%20for%20our%20college."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full flex items-center justify-center gap-2.5 py-3 px-4 rounded-xl text-xs sm:text-sm font-semibold text-white bg-gradient-to-r from-[#008744] via-[#00A651] to-[#008744] hover:from-[#007338] hover:to-[#008744] shadow-lg shadow-emerald-500/25 transition-all transform hover:scale-[1.02] active:scale-95 cursor-pointer"
@@ -415,6 +438,13 @@ export default function ContactSection() {
                       className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-[#008744]/30 focus:border-[#008744] transition-all bg-slate-50/50 hover:bg-white resize-none font-normal"
                     />
                   </div>
+
+                  {errorMessage && (
+                    <div className="p-3 rounded-xl bg-rose-50 border border-rose-200 text-rose-700 text-xs flex items-center gap-2">
+                      <span className="font-bold">⚠️</span>
+                      <span>{errorMessage}</span>
+                    </div>
+                  )}
 
                   {/* Submit Button */}
                   <button

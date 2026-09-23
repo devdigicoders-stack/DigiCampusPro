@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { scrollToSection } from '../../utils/smoothScroll'
 import {
@@ -17,11 +17,25 @@ import {
   CreditCard,
   Calendar,
   Settings,
-  FileText
+  FileText,
+  ExternalLink,
+  Sparkles
 } from 'lucide-react'
+import { useApp } from '../../context/AppContext'
 
 export default function HeroSection() {
   const [showVideoModal, setShowVideoModal] = useState(false)
+  const { openDemoModal } = useApp()
+
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === 'Escape') setShowVideoModal(false)
+    }
+    if (showVideoModal) {
+      window.addEventListener('keydown', handleKeyDown)
+    }
+    return () => window.removeEventListener('keydown', handleKeyDown)
+  }, [showVideoModal])
 
   return (
     <section id="home" className="relative min-h-[calc(100vh-5rem)] lg:h-[calc(100vh-5rem)] flex items-center justify-center overflow-hidden bg-[#020C07] scroll-mt-20">
@@ -62,7 +76,7 @@ export default function HeroSection() {
             </p>
 
             {/* Action Buttons */}
-            <div className="flex flex-wrap items-center gap-3.5 pt-1">
+            <div className="flex flex-wrap items-center gap-3 pt-1">
               <a
                 href="#contact"
                 onClick={(e) => {
@@ -83,8 +97,47 @@ export default function HeroSection() {
                 <div className="w-5 h-5 rounded-full bg-white/20 flex items-center justify-center transition-transform group-hover:scale-110">
                   <Play className="w-2.5 h-2.5 fill-white text-white ml-0.5" />
                 </div>
-                <span>Watch Video</span>
+                <span>Watch Demo</span>
               </button>
+
+              <button
+                type="button"
+                onClick={openDemoModal}
+                className="inline-flex items-center justify-center gap-2 px-5 py-2.5 sm:px-6 sm:py-3 rounded-full text-xs sm:text-sm font-semibold text-emerald-300 border border-emerald-500/50 bg-emerald-950/60 hover:bg-emerald-900/60 backdrop-blur-md shadow-sm transition-all hover:border-emerald-400 active:scale-95 cursor-pointer group"
+              >
+                <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+                <span>Live Admin Demo</span>
+                <ExternalLink className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
+              </button>
+            </div>
+
+            {/* Live Demo Credentials Quick Bar */}
+            <div className="p-3 sm:p-3.5 rounded-2xl bg-white/[0.04] border border-emerald-500/30 backdrop-blur-md max-w-lg text-left shadow-lg">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                <div className="flex items-center gap-2.5">
+                  <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-emerald-500/20 to-teal-500/20 border border-emerald-500/30 flex items-center justify-center text-emerald-400 shrink-0">
+                    <Building2 className="w-4 h-4" />
+                  </div>
+                  <div>
+                    <div className="text-[12px] font-bold text-white flex items-center gap-1.5 flex-wrap">
+                      <span>Live Demo College:</span>
+                      <span className="text-[#FFA000]">DigiCampus Pro Demo</span>
+                    </div>
+                    <div className="text-[11px] text-slate-300 font-mono mt-0.5">
+                      User: <strong className="text-emerald-300">demoadmin</strong> &nbsp;|&nbsp; Pass: <strong className="text-emerald-300">Demo@12345</strong>
+                    </div>
+                  </div>
+                </div>
+
+                <button
+                  type="button"
+                  onClick={openDemoModal}
+                  className="px-3.5 py-1.5 rounded-xl bg-gradient-to-r from-[#008744] to-[#00A651] hover:from-[#007338] hover:to-[#008744] text-white text-xs font-bold shadow-sm whitespace-nowrap transition-all flex items-center justify-center gap-1.5 cursor-pointer self-start sm:self-auto"
+                >
+                  <span>Launch Demo</span>
+                  <ExternalLink className="w-3 h-3" />
+                </button>
+              </div>
             </div>
 
             {/* Stats Row */}
@@ -119,13 +172,13 @@ export default function HeroSection() {
           {/* Right Column: High-fidelity MacBook Laptop Mockup + Handwritten Callout */}
           <div className="lg:col-span-6 relative mt-4 lg:mt-0 flex justify-center">
             {/* Handwritten script & arrow callout */}
-            <div className="hidden sm:flex flex-col items-start absolute -top-7 -right-1 lg:-right-4 xl:-right-6 z-20 pointer-events-none select-none">
-              <span className="text-base lg:text-lg text-white font-['Caveat',cursive] leading-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)] -rotate-3">
+            <div className="hidden sm:flex flex-col items-start absolute -top-6 -right-1 lg:-right-3 xl:-right-4 z-20 pointer-events-none select-none">
+              <span className="text-sm lg:text-base text-white font-['Caveat',cursive] leading-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)] -rotate-3">
                 Smarter Education <br />
                 Stronger Future
               </span>
               <svg
-                className="w-8 h-8 text-white ml-3 -mt-1 opacity-90 filter drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]"
+                className="w-7 h-7 text-white ml-2 -mt-0.5 opacity-90 filter drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]"
                 viewBox="0 0 50 50"
                 fill="none"
                 stroke="currentColor"
@@ -138,8 +191,8 @@ export default function HeroSection() {
               </svg>
             </div>
 
-            {/* Laptop Body Container (Compact & screen-fitted) */}
-            <div className="w-full max-w-[450px] xl:max-w-[490px] relative drop-shadow-[0_20px_30px_rgba(0,0,0,0.7)]">
+            {/* Laptop Body Container (Scaled down & sleek proportion) */}
+            <div className="w-full max-w-[340px] sm:max-w-[370px] lg:max-w-[390px] xl:max-w-[420px] relative drop-shadow-[0_20px_30px_rgba(0,0,0,0.7)] transition-all duration-300">
               {/* Laptop Screen Upper Bezel & Glass Display */}
               <div className="bg-slate-900 rounded-t-xl p-2 pb-1 border-t border-x border-slate-600 shadow-2xl relative">
                 {/* Webcam dot */}
@@ -366,54 +419,68 @@ export default function HeroSection() {
 
       {/* Video Demonstration Modal */}
       {showVideoModal && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md animate-in fade-in duration-200">
-          <div className="relative w-full max-w-2xl bg-[#03100A] border border-emerald-900/60 rounded-2xl overflow-hidden shadow-2xl">
-            <div className="flex items-center justify-between p-3.5 border-b border-emerald-900/50 bg-[#020C07]">
+        <div
+          onClick={(e) => {
+            if (e.target === e.currentTarget) setShowVideoModal(false)
+          }}
+          className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 bg-black/85 backdrop-blur-md animate-in fade-in duration-200"
+        >
+          <div className="relative w-full max-w-4xl bg-[#03100A] border border-emerald-900/60 rounded-2xl overflow-hidden shadow-2xl flex flex-col max-h-[90vh]">
+            {/* Modal Header */}
+            <div className="flex items-center justify-between px-4 py-3 sm:px-5 sm:py-3.5 border-b border-emerald-900/50 bg-[#020C07] shrink-0">
               <div className="flex items-center gap-2">
-                <span className="w-2 h-2 rounded-full bg-[#FF7A00]" />
-                <h3 className="text-sm font-bold text-white font-['Outfit',sans-serif]">
-                  DigiCampusPro Platform Walkthrough
+                <span className="w-2 h-2 rounded-full bg-[#FF7A00] animate-pulse" />
+                <h3 className="text-xs sm:text-sm font-bold text-white font-['Outfit',sans-serif]">
+                  DigiCampusPro - Live Platform Walkthrough Demo
                 </h3>
               </div>
               <button
                 onClick={() => setShowVideoModal(false)}
                 className="p-1.5 rounded-lg text-slate-400 hover:text-white hover:bg-white/10 transition-colors cursor-pointer"
+                title="Close"
               >
                 <X className="w-5 h-5" />
               </button>
             </div>
 
-            <div className="p-6 text-center space-y-4">
-              <div className="aspect-video bg-[#020C07] rounded-xl border border-emerald-900/40 flex flex-col items-center justify-center relative overflow-hidden group">
-                <div className="p-4 rounded-full bg-gradient-to-r from-[#FFA000] to-[#FF6000] text-slate-950 shadow-xl group-hover:scale-110 transition-transform">
-                  <Play className="w-7 h-7 fill-slate-950 ml-1" />
-                </div>
-                <p className="mt-3 text-xs font-semibold text-slate-300">
-                  Interactive College Automation & NEP 2020 Grading Video Walkthrough
-                </p>
-                <p className="text-[10.5px] text-slate-500">
-                  Contact admissions & administration support for personalized screen-share session.
-                </p>
+            {/* Modal Video Body */}
+            <div className="p-3 sm:p-5 flex-1 flex flex-col justify-between overflow-y-auto">
+              <div className="relative aspect-video w-full bg-black rounded-xl overflow-hidden shadow-2xl border border-emerald-950/80">
+                <video
+                  src="/admin_Rec.mp4"
+                  controls
+                  autoPlay
+                  playsInline
+                  className="w-full h-full object-contain"
+                >
+                  Your browser does not support the video tag.
+                </video>
               </div>
 
-              <div className="flex items-center justify-end gap-3 pt-1">
-                <button
-                  onClick={() => setShowVideoModal(false)}
-                  className="px-4 py-2 rounded-xl text-xs font-semibold text-slate-300 hover:text-white bg-white/10 cursor-pointer"
-                >
-                  Close
-                </button>
-                <a
-                  href="#contact"
-                  onClick={(e) => {
-                    e.preventDefault()
-                    setShowVideoModal(false)
-                    scrollToSection('contact')
-                  }}
-                  className="px-5 py-2 rounded-xl text-xs font-bold text-slate-950 bg-gradient-to-r from-[#FFA000] to-[#FF6000] hover:from-[#FFB000] hover:to-[#FF7000] cursor-pointer"
-                >
-                  Schedule Live 1-on-1 Demo
-                </a>
+              {/* Modal Footer Controls */}
+              <div className="flex flex-col sm:flex-row items-center justify-between gap-3 pt-4 border-t border-emerald-900/40 mt-3 text-left">
+                <p className="text-[11px] sm:text-xs text-slate-400 font-medium">
+                  Live Admin Portal walkthrough demonstrating admissions, academics & campus operations.
+                </p>
+                <div className="flex items-center gap-2.5 shrink-0 w-full sm:w-auto justify-end">
+                  <button
+                    onClick={() => setShowVideoModal(false)}
+                    className="px-4 py-2 rounded-xl text-xs font-semibold text-slate-300 hover:text-white bg-white/10 hover:bg-white/15 transition-colors cursor-pointer"
+                  >
+                    Close
+                  </button>
+                  <a
+                    href="#contact"
+                    onClick={(e) => {
+                      e.preventDefault()
+                      setShowVideoModal(false)
+                      scrollToSection('contact')
+                    }}
+                    className="px-5 py-2 rounded-xl text-xs font-bold text-slate-950 bg-gradient-to-r from-[#FFA000] to-[#FF6000] hover:from-[#FFB000] hover:to-[#FF7000] shadow-md shadow-orange-500/20 transition-all cursor-pointer"
+                  >
+                    Schedule Live 1-on-1 Demo
+                  </a>
+                </div>
               </div>
             </div>
           </div>

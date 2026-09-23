@@ -1,8 +1,11 @@
 import { Link } from 'react-router-dom'
-import { ArrowRight } from 'lucide-react'
+import { ArrowRight, ExternalLink } from 'lucide-react'
 import { scrollToSection } from '../../utils/smoothScroll'
+import { useApp } from '../../context/AppContext'
 
 export default function CtaBanner() {
+  const { openDemoModal } = useApp()
+
   return (
     <section className="relative bg-gradient-to-b from-[#F0FDF4] via-white to-[#E8F5EE] py-12 sm:py-16 px-4 sm:px-6 lg:px-8 overflow-hidden">
       <div className="max-w-7xl mx-auto">
@@ -42,16 +45,15 @@ export default function CtaBanner() {
                   <ArrowRight className="w-3.5 h-3.5" />
                 </a>
 
-                <a
-                  href="#contact"
-                  onClick={(e) => {
-                    e.preventDefault()
-                    scrollToSection('contact')
-                  }}
-                  className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full text-xs sm:text-sm font-semibold text-white border border-emerald-500/40 bg-emerald-950/40 hover:bg-emerald-900/50 backdrop-blur-md transition-all active:scale-95 cursor-pointer"
+                <button
+                  type="button"
+                  onClick={openDemoModal}
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full text-xs sm:text-sm font-semibold text-emerald-300 border border-emerald-500/40 bg-emerald-950/60 hover:bg-emerald-900/60 backdrop-blur-md transition-all active:scale-95 cursor-pointer"
                 >
-                  Contact Us
-                </a>
+                  <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+                  <span>Try Live College Demo</span>
+                  <ExternalLink className="w-3.5 h-3.5" />
+                </button>
               </div>
             </div>
 

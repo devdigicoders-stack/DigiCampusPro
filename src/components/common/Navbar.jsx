@@ -1,14 +1,16 @@
 import { useState, useEffect } from 'react'
 import { Link, useNavigate, useLocation } from 'react-router-dom'
-import { ArrowRight, Menu, X, ChevronRight } from 'lucide-react'
+import { ArrowRight, Menu, X, ChevronRight, Sparkles } from 'lucide-react'
 import { NAV_LINKS } from '../../constants/navigation'
 import { scrollToSection } from '../../utils/smoothScroll'
+import { useApp } from '../../context/AppContext'
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [activeSection, setActiveSection] = useState('home')
   const location = useLocation()
   const navigate = useNavigate()
+  const { openDemoModal } = useApp()
 
   // Track active section as user scrolls
   useEffect(() => {
@@ -95,7 +97,21 @@ export default function Navbar() {
         </nav>
 
         {/* Right: Desktop CTA Button & Divider */}
-        <div className="hidden lg:flex items-center gap-4">
+        <div className="hidden lg:flex items-center gap-3">
+          {/* Live College Demo Button */}
+          <button
+            type="button"
+            onClick={openDemoModal}
+            className="group inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs font-bold text-emerald-800 bg-emerald-50 hover:bg-emerald-100 border border-emerald-300 shadow-2xs hover:shadow-xs transition-all transform hover:scale-[1.03] active:scale-95 cursor-pointer"
+          >
+            <span className="relative flex h-2 w-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+            </span>
+            <span>Live College Demo</span>
+            <Sparkles className="w-3.5 h-3.5 text-amber-500" />
+          </button>
+
           {/* Subtle separator line */}
           <div className="h-5 w-[1px] bg-slate-200" />
 
@@ -103,7 +119,7 @@ export default function Navbar() {
           <a
             href="#contact"
             onClick={(e) => handleNavClick(e, 'contact')}
-            className="group relative inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-full text-sm font-bold text-white bg-gradient-to-r from-[#FFA000] via-[#FF8000] to-[#FF6000] hover:from-[#FFB020] hover:to-[#E65C00] shadow-md shadow-orange-500/25 hover:shadow-lg hover:shadow-orange-500/35 transition-all duration-200 transform hover:scale-[1.03] active:scale-95 cursor-pointer"
+            className="group relative inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full text-sm font-bold text-white bg-gradient-to-r from-[#FFA000] via-[#FF8000] to-[#FF6000] hover:from-[#FFB020] hover:to-[#E65C00] shadow-md shadow-orange-500/25 hover:shadow-lg hover:shadow-orange-500/35 transition-all duration-200 transform hover:scale-[1.03] active:scale-95 cursor-pointer"
           >
             <span>Get Started</span>
             <ArrowRight className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" />
@@ -156,8 +172,21 @@ export default function Navbar() {
             })}
           </div>
 
-          {/* Mobile CTA Button */}
-          <div className="pt-3 border-t border-slate-100">
+          {/* Mobile CTA Buttons */}
+          <div className="pt-3 border-t border-slate-100 space-y-2">
+            <button
+              type="button"
+              onClick={() => {
+                setMobileMenuOpen(false)
+                openDemoModal()
+              }}
+              className="w-full flex items-center justify-center gap-2 py-3 px-6 rounded-full text-sm font-bold text-emerald-800 bg-emerald-50 hover:bg-emerald-100 border border-emerald-300 shadow-xs active:scale-95 transition-all cursor-pointer"
+            >
+              <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+              <span>Live College Demo (Admin Panel)</span>
+              <Sparkles className="w-4 h-4 text-amber-500" />
+            </button>
+
             <a
               href="#contact"
               onClick={(e) => handleNavClick(e, 'contact')}
